@@ -74,7 +74,7 @@ $lang_mod_header_p2 =
 $lang_mod_header_p3 =
 	"<p>Check that the &lt;head&gt; element includes the proper content type and encoding for XHTML: </p>";
 $lang_mod_header_p4 =
-	"<p>We provide an online service for publishing your GoodRelations content on the Web of Linked Data. You only have to enter the Web addresses of your annotated pages there, afterwards we are able to take care of the registration of your pages on the Web of Linked Data. The notification service is available <a href=\"http://www.ebusiness-unibw.org/tools/gr-notify/\">here</a>.</p>";
+	"<p>With our dedicated notification service we can provide you assistance in publishing your embedded GoodRelations content. There you just have to fill in your page's Web address, afterwards we can automatically take care of the registration of your pages on the Web of Linked Data. This online tool is available <a href=\"http://www.ebusiness-unibw.org/tools/gr-notify/\">here</a>.</p>";
 $lang_additional_resources =
 	"Additional resources";
 $lang_additional_quickstart =

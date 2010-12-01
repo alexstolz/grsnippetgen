@@ -63,10 +63,12 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 </head>');
 	echo $geshi->parse_code();
 	?></div>
+	<?php echo $lang_mod_header_p4 ?>
 	<h2><?php echo $lang_additional_resources ?></h2>
 	<p><a href="http://www.ebusiness-unibw.org/wiki/GoodRelationsQuickstart">GoodRelations Quickstart Guide</a> - <?php echo $lang_additional_quickstart ?></p>
 	<p><a href="http://www.ebusiness-unibw.org/wiki/GoodRelations#CookBook:_GoodRelations_Recipes_and_Examples">GoodRelations CookBook</a> - <?php echo $lang_additional_cookbook ?></p>
 	<p><a href="http://purl.org/goodrelations/">GoodRelations Project Page</a> - <?php echo $lang_additional_goodrelations ?></p>
+	<p><a href="http://www.ebusiness-unibw.org/tools/gr-notify/">GoodRelations Notify</a> - <?php echo $lang_additional_grnotify ?></p>
 	<div><img class="nodisp" src="images/load.gif" alt="" /></div>
 	<div><img class="nodisp" src="images/valid.png" alt="" /></div>
 	<div><img class="nodisp" src="images/warning.png" alt="" /></div>

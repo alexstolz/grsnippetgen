@@ -73,6 +73,8 @@ $lang_mod_header_p2 =
 	"<p>Fügen Sie dem &lt;html&gt;-Element Ihrer Webseiten ein \"xmlns\"-Attribut mit dem Wert \"http://www.w3.org/1999/xhtml\" und ein \"version\"-Attribut mit dem Wert \"HTML+RDFa 1.0\" hinzu: </p>";
 $lang_mod_header_p3 =
 	"<p>Überprüfen Sie, ob das &lt;head&gt;-Element den passenden Content-Type und das passende Encoding für XHTML besitzt:</p>";
+$lang_mod_header_p4 =
+	"<p>Wir können Ihnen dabei helfen, die neu hinzugefügten GoodRelations-Inhalte Ihrer Webseite im Web of Linked Data zu publizieren. Hierzu bieten wir einen Online-Dienst an, bei dem Sie ihre Webseite eintragen können. Wir übernehmen dann für Sie die Weiterleitung. Der Dienst befindet sich <a href=\"http://www.ebusiness-unibw.org/tools/gr-notify/\">hier</a>.</p>";
 $lang_additional_resources =
 	"Weitere Ressourcen";
 $lang_additional_quickstart =
@@ -81,6 +83,8 @@ $lang_additional_cookbook =
 	"komplexere Muster für spezifische Szenarien";
 $lang_additional_goodrelations =
 	"Informationen über das zugrundeliegende GoodRelations Vokabular";
+$lang_additional_grnotify =
+	"Übermittlungsdienst für GoodRelations-Inhalte an semantische Suchmaschinen";
 $lang_epilogue =
 	"<p><strong>Entwickler:</strong> Alex Stolz</p>
 	<p><strong>Haftungsausschluss:</strong> Dies ist ein Service der Forschungsgruppe <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> an der Universität der Bundeswehr München und bietet weder ausdrückliche noch inbegriffene Gewährleistungen.</p>";

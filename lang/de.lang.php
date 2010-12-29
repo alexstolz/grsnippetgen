@@ -74,7 +74,7 @@ $lang_mod_header_p2 =
 $lang_mod_header_p3 =
 	"<p>Überprüfen Sie, ob das &lt;head&gt;-Element den passenden Content-Type und das passende Encoding für XHTML besitzt:</p>";
 $lang_mod_header_p4 =
-	"<p>Wir können Ihnen dabei helfen, die neu hinzugefügten GoodRelations-Inhalte Ihrer Webseite im Web of Linked Data zu publizieren. Hierzu bieten wir einen Online-Dienst an, bei dem Sie ihre Webseite eintragen können. Wir übernehmen dann für Sie die Weiterleitung. Der Dienst befindet sich <a href=\"http://www.ebusiness-unibw.org/tools/gr-notify/\">hier</a>.</p>";
+	"<p>Wir können Ihnen dabei helfen, die neu hinzugefügten GoodRelations-Inhalte Ihrer Webseite im Web of Linked Data zu publizieren. Hierzu bieten wir einen Online-Dienst an, bei dem Sie ihre Webseite eintragen können. Wir übernehmen dann für Sie die Weiterleitung. Der Dienst befindet sich <a href=\"http://gr-notify.appspot.com/\">hier</a>.</p>";
 $lang_additional_resources =
 	"Weitere Ressourcen";
 $lang_additional_quickstart =

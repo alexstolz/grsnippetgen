@@ -74,7 +74,7 @@ $lang_mod_header_p2 =
 $lang_mod_header_p3 =
 	"<p>Check that the &lt;head&gt; element includes the proper content type and encoding for XHTML: </p>";
 $lang_mod_header_p4 =
-	"<p>With our dedicated notification service we can provide you assistance in publishing your embedded GoodRelations content. There you just have to fill in your page's Web address, afterwards we can automatically take care of the registration of your pages on the Web of Linked Data. This online tool is available <a href=\"http://www.ebusiness-unibw.org/tools/gr-notify/\">here</a>.</p>";
+	"<p>With our dedicated notification service we can provide you assistance in publishing your embedded GoodRelations content. There you just have to fill in your page's Web address, afterwards we can automatically take care of the registration of your pages on the Web of Linked Data. This online tool is available <a href=\"http://gr-notify.appspot.com/\">here</a>.</p>";
 $lang_additional_resources =
 	"Additional resources";
 $lang_additional_quickstart =

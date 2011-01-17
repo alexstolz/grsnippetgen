@@ -10,6 +10,20 @@ function fill_vcard() {
 	}
 }
 
+function swap_logging(id) {
+	clog = document.getElementById('company_logging_allowed');
+	slog = document.getElementById('shop_logging_allowed');
+	olog = document.getElementById('offer_logging_allowed');
+	self = document.getElementById(id);
+	
+	self.checked = !self.checked;
+	clog.checked = !clog.checked;
+	slog.checked = !slog.checked;
+	olog.checked = !olog.checked;
+	
+	self.value = self.checked;
+}
+
 var map;
 var infowindow = new google.maps.InfoWindow();
 

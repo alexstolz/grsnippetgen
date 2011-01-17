@@ -128,6 +128,8 @@ if($template_type == '')
 	endif;
 	?>
 	</table>
+	<p><input type="checkbox" id="<?php echo $template_type ?>_logging_allowed" checked="checked" value="true" onclick="javascript:swap_logging(this.id)" /><span style="font-size:11px;color:#666;"><?php echo $lang_controller_allow_logging ?></span>
+	</p>
 	<p><input id="<?php echo $template_type ?>_langcode" type="hidden" value="<?php echo $lang ?>" /><input id="<?php echo $template_type ?>_button" type="button" value="<?php echo $lang_controller_submit_button ?>" onclick="javascript:reload('<?php echo $template_type ?>')<?php echo ($template_type=="shop"?";document.getElementById('offer_page').value=document.getElementById('shop_page').value":"") ?>" /></p>
 	</form>
 	<div id="<?php echo $template_type ?>_snippet" class="pre"></div>

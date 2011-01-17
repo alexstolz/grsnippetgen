@@ -133,6 +133,8 @@ $lang_controller_paymentmethod_hint =
 	"(siehe <a href=\"http://purl.org/goodrelations/v1#PaymentMethod\">vordefinierte Instanzen der Zahlungsmethoden</a> in GoodRelations)";
 $lang_controller_submit_button =
 	"Code Snippet generieren";
+$lang_controller_allow_logging =
+	"Anonymisiertes Logging von Informationen für Forschungszwecke erlauben?";
 $lang_controller_shop_additional_information =
 	"<p>Falls Sie eine granularere Beschreibung Ihrer Öffnungszeiten wünschen, dann passen Sie einfach den Abschnitt mit den gr:OpeningHoursSpecification-Eigenschaften an. Für Details siehe <a href=\"http://www.ebusiness-unibw.org/wiki/GoodRelationsQuickstart\">GoodRelations Quickstart Guide</a>.</p>
 	<p>Falls Sie mehrere Geschäftseinheiten, aber nur eine Webseite haben, dann erstellen und kopieren Sie das Codestück mehrfach und ersetzen alle Vorkommen der drei Elemente <em>(#store, #mon_fri, und #sat)</em> innerhalb desselben Codeabschnitts mit <em>(#store1, #mon_fri1, #sat1)</em>, <em>(#store2, #mon_fri2, #sat2)</em>, etc.</p>";

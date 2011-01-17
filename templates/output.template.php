@@ -37,4 +37,6 @@ header("Content-Length: ".strlen($template));
 header("Cache-Control: private");
 echo $template;
 endif;
+
+include_once("../utils/log.php");
 ?>

@@ -9,9 +9,9 @@ if($page)
 else
 	$offering->add_rev("gr:offers", "#company");
 if($product_name)
-	$offering->add_property("rdfs:label", $product_name, null, $lang);
+	$offering->add_property("gr:name", $product_name, null, $lang);
 if($description)
-	$offering->add_property("rdfs:comment", $description, null, $lang);
+	$offering->add_property("gr:description", $description, null, $lang);
 if($depiction)
 	$offering->add_rel("foaf:depiction", $depiction);
 $offering->add_rel("gr:hasBusinessFunction", "http://purl.org/goodrelations/v1#Sell");

@@ -9,7 +9,7 @@ if($page)
 else
 	$shop->add_rev("gr:hasPOS", "#company");
 if($store_name)
-	$shop->add_property("rdfs:label", $store_name);
+	$shop->add_property("gr:name", $store_name);
 $address = new Resource(null, "vcard:Address");
 if($country_name)
 	$address->add_property("vcard:country-name", $country_name);

@@ -21,11 +21,12 @@ $dl_button_link = "templates/".$template_name.".template.php?";
 $arr = $_POST?$_POST:$_GET;
 function info($k, $v) {
 	global $template_name;
-	if($template_name=="offer" && $k=="page")
-		$template_name = "shop";
+	$template_name_tmp = $template_name;
+	if($template_name_tmp=="offer" && $k=="page")
+		$template_name_tmp = "shop";
 	if($v=="")
 		$v = "empty";
-	return "<a href=\"#".$template_name."_$k\" title=\"$v\">$k</a>";
+	return "<a href=\"#".$template_name_tmp."_$k\" title=\"$v\">$k</a>";
 }
 foreach($arr as $key=>$value) {
 	$key = preg_replace("/(".$template_name."_)/i", "", $key);

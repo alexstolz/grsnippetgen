@@ -29,7 +29,7 @@ $row .= (strpos($ip, ".")>0?substr($ip, 0, strrpos($ip, ".")+1)."XXX":"user_ip_n
 
 $row .= $template_name ."\t". $_SERVER['PHP_SELF'] ."\t";
 
-if($logging_allowed=="true") $row .= implode(";", $_POST);
+if($logging_allowed=="true") $row .= implode(";", str_replace(";", "\;", $_POST));
 else $row .= "input_not_logged";
 
 if($row != "") {

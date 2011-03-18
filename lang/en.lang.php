@@ -59,7 +59,7 @@ $lang_conf_price =
 /* index */
 $lang_step = "Step";
 $lang_prologue =
-	"<h1>Rich Snippet Generator for</h1><div style=\"float:left\"><a href=\"http://purl.org/goodrelations/\"><img src=\"http://www.heppnetz.de/ontologies/goodrelations/goodrelations-logo-small.png\" alt=\"GoodRelations\"/></a></div><div style=\"float:right\"><a href=\"http://www.ebusiness-unibw.org/\"><img src=\"http://www.heppnetz.de/ontologies/goodrelations/logo_researchgroup.png\" alt=\"E-Business and Web Science Research Group\"/></a></div>
+	"<h1>Rich Snippet Generator for</h1><div style=\"float:left\"><a href=\"http://purl.org/goodrelations/\"><img src=\"http://www.heppnetz.de/ontologies/goodrelations/logos/gr_banner_small.png\" alt=\"GoodRelations\"/></a></div><div style=\"float:right\"><a href=\"http://www.ebusiness-unibw.org/\"><img src=\"http://www.heppnetz.de/ontologies/goodrelations/logo_researchgroup.png\" alt=\"E-Business and Web Science Research Group\"/></a></div>
 	<div style=\"clear:both; padding-bottom: 12px;\"></div>
 	<p>GoodRelations is a powerful yet simple technique for putting rich data snippets about your business into your Web pages. This makes the unique features of your products and services more accessible for the latest generation of search engines (e.g. <a href=\"http://www.heppresearch.com/gr4google\">Google</a> or Yahoo SearchMonkey), novel mobile applications, and browser plug-ins. Plus, it brings positive effects on existing search engines.</p>
 	<p>With this tool, you can create such snippets using the W3C RDFa format for simple copy-and-paste. Just insert them into your Web pages and update the XHTML/HTML page header markup, as explained <a href=\"#mod_header\">below</a>.</p>

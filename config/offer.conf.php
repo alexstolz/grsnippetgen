@@ -1,6 +1,7 @@
 <?php
 $config = array(
 	"product_name"			=>	$lang_conf_product_name,
+	"category"				=>  $lang_conf_category,
 	"description"			=>	$lang_conf_description,
 	"lang"					=>	$lang_conf_lang,
 	"product_page"			=>	$lang_conf_product_page,

@@ -112,6 +112,8 @@ $lang_controller_select =
 	"select ...";
 $lang_controller_currency =
 	"Currency and price for product";
+$lang_controller_category =
+	"Product category";
 $lang_controller_notify_lang_code =
 	"you may enter a custom language code that is not defined in the list";
 $lang_controller_notify_currency_code =

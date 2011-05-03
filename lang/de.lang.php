@@ -112,6 +112,8 @@ $lang_controller_select =
 	"auswählen ...";
 $lang_controller_currency =
 	"Währung und Produktpreis";
+$lang_controller_category =
+	"Produktkategorie";
 $lang_controller_notify_lang_code =
 	"Sie können auch einen eigenen Sprachcode eingeben, der nicht in der Liste enthalten ist";
 $lang_controller_notify_currency_code =

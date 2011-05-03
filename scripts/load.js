@@ -1,3 +1,23 @@
+$(document).ready(function() {
+	var lemmat = ""
+	$("input#category").autocomplete({
+		source: "utils/search.php",
+		change: function(event, ui) {
+			if($(this).attr("value").replace(/ /g, "_") != lemmat) {
+				$("input#category_link").attr("value", "");
+				$("div#pto_link").text("");
+			}
+		},
+		select: function(event, ui) {
+			var lemma = ui.item.value.replace(/ /g, "_");
+			lemmat = ui.item.value.replace(/ /g, "_");
+			var pto_link = "http://productontology.org/id/"+lemma;
+			$("input#category_link").attr("value", pto_link);
+			$("div#pto_link").html("<a href=\""+pto_link+"\">pto:"+lemma+"</a>");
+		}
+	});
+});
+
 function reload(template_uri)
 {
 	var http_request = false;

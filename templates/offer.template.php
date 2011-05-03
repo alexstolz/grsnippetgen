@@ -17,6 +17,12 @@ if($depiction)
 $offering->add_rel("gr:hasBusinessFunction", "http://purl.org/goodrelations/v1#Sell");
 if($gtin_13)
 	$offering->add_property("gr:hasEAN_UCC-13", $gtin_13, "xsd:string");
+if($category) {
+	if($category_link)
+		$offering->add_rel("rdf:type", $category_link);
+	elseif(!empty($category))
+		$offering->add_property("gr:category", $category, null, $lang);
+}
 $unitpricespec = new Resource(null, "gr:UnitPriceSpecification");
 if($currency)
 	$unitpricespec->add_property("gr:hasCurrency", $currency, "xsd:string");

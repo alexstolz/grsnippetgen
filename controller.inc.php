@@ -82,6 +82,13 @@ if($template_type == '')
 	<?php
 			continue;
 		}
+		/* category */
+		if($token1=="category") {
+	?>
+		<tr><td style="width:480px"><?php echo $lang_controller_category ?></td><td><input style="width:480px" id="category" type="text" /><input type="hidden" id="category_link" /><div id="pto_link"></div></td></tr>
+	<?php
+			continue;
+		}
 		/* currencies */
 		if($token1=="currency") {
 	?>

@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	var lemmat = ""
-	$("input#category").autocomplete({
+	$("input#offer_category").autocomplete({
 		source: "utils/search.php",
 		change: function(event, ui) {
 			if($(this).attr("value").replace(/ /g, "_") != lemmat) {
-				$("input#category_link").attr("value", "");
+				$("input#offer_category_link").attr("value", "");
 				$("div#pto_link").text("");
 			}
 		},
@@ -12,7 +12,7 @@ $(document).ready(function() {
 			var lemma = ui.item.value.replace(/ /g, "_");
 			lemmat = ui.item.value.replace(/ /g, "_");
 			var pto_link = "http://www.productontology.org/id/"+lemma;
-			$("input#category_link").attr("value", pto_link);
+			$("input#offer_category_link").attr("value", pto_link);
 			$("div#pto_link").html("<a href=\""+pto_link+"\">pto:"+lemma+"</a>");
 		}
 	});

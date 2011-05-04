@@ -172,12 +172,12 @@ $lang_controller_customertype_title =
 $lang_controller_customertype_hint =
 	"(<br />see <a href=\"http://purl.org/goodrelations/v1#BusinessEntityType\">predefined business partner individuals</a> in GoodRelations)";
 // eligible regions
-$lang_controller_notify_customertypes =
+$lang_controller_notify_eligibleregions =
 	"select multiple regions for which the offer is valid (control+click)";
-$lang_controller_customertype_title =
+$lang_controller_eligibleregion_title =
 	"Eligible regions";
-$lang_controller_customertype_hint =
-	"(<br /><a href=\"#\" onclick=\"javascript:selectAT_CH_DE(); return false\">select A, CH and D</a><br /><a href=\"#\" onclick=\"javascript:selectEU(); return false\">select EU member states</a><br /><a href=\"#\" onclick=\"javascript:clearAll(); return false\">deselect all</a>)";
+$lang_controller_eligibleregion_hint =
+	"(<br /><a href=\"#\" id=\"selectA_CH_D\">select A, CH and D</a><br /><a href=\"#\" id=\"selectEU\">select EU member states</a><br /><a href=\"#\" id=\"selectNone\">deselect all</a>)";
 
 $lang_controller_submit_button =
 	"Generate Code Snippet";

@@ -80,6 +80,11 @@ foreach($arr as $key=>$value) {
 			if(!is_numeric($value))
 				$error .= $lang_error_error_price." ".info($key, $value).": $lang_error_error_price_desc ...<br/>";
 			break;
+		case "validfrom":
+		case "validthrough":
+			if(!preg_match("/^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(Z|((-|\+)[0-9]{2}:[0-9]{2}))$/i", $value))
+				$error .= $lang_error_error_validity." ".info($key, $value).": $lang_error_error_validity_desc ...<br/>";
+			break;
 	}
 	${$key} = htmlspecialchars(str_replace(array("\\\"", "\\'"), array("\"", "'"), $value), ENT_QUOTES, "UTF-8");
 	$dl_button_link .= urlencode($key)."=".urlencode($value)."&amp;";

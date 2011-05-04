@@ -44,6 +44,10 @@ if($price)
 $unitpricespec->add_property("gr:hasUnitOfMeasurement", "C62", "xsd:string");
 if($currency || $price)
 	$offering->add_rel("gr:hasPriceSpecification", $unitpricespec);
+if($validfrom)
+	$offering->add_property("gr:validFrom", $validfrom, "xsd:dateTime");
+if($validthrough)
+	$offering->add_property("gr:validThrough", $validthrough, "xsd:dateTime");
 if(isset($businessfunction)) {
 	$offering->add_rel("gr:hasBusinessFunction", "http://purl.org/goodrelations/v1#".$businessfunction);
 }

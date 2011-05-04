@@ -58,7 +58,7 @@ $lang_conf_price =
 $lang_conf_validfrom =
 	"Gültigkeit des Produktangebots <strong>von</strong> (Datumsformat ".date("d.m.Y\T00:00:00\Z").")";
 $lang_conf_validthrough =
-	"Gültigkeit des Produktangebots <strong>bis</strong> (Datumsformat ".date("d.m.Y\T23:59:00\Z", mktime(date()+24*365)).")";
+	"Gültigkeit des Produktangebots <strong>bis</strong> (Datumsformat ".date("d.m.Y\T23:59:00\Z", mktime(0, 0, 0, date("m"), date("d"), date("Y")+1)).")";
 
 /* index */
 $lang_step = "Schritt";
@@ -220,6 +220,10 @@ $lang_error_error_price =
 	"Eingabewert ist nicht numerisch in";
 $lang_error_error_price_desc =
 	"Geben Sie bitte einen numerischen Wert ein, z.B. 12.99";
+$lang_error_error_validity =
+	"Datumsformat ist nicht valide für";
+$lang_error_error_validity_desc =
+	"Geben Sie das Datumsformat bitte in der Form 2008-05-30T09:30:10Z ein";
 	
 /* output.template */
 $lang_output_error =

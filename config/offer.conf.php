@@ -8,6 +8,8 @@ $config = array(
 	"depiction"				=>	$lang_conf_product_depiction,
 	"gtin_13"				=>	$lang_conf_gtin_13,
 	"currency"				=>	$lang_conf_currency,
-	"price"					=>	$lang_conf_price
+	"price"					=>	$lang_conf_price,
+	"validfrom"				=>	$lang_conf_validfrom,
+	"validthrough"			=>	$lang_conf_validthrough
 );
 ?>

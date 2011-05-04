@@ -28,6 +28,8 @@ function info($k, $v) {
 		$v = "empty";
 	return "<a href=\"#".$template_name_tmp."_$k\" title=\"$v\">$k</a>";
 }
+
+//print_r($arr);
 foreach($arr as $key=>$value) {
 	$key = preg_replace("/(".$template_name."_)/i", "", $key);
 	if(is_array($value)){
@@ -36,7 +38,8 @@ foreach($arr as $key=>$value) {
 	}
 	$value = trim($value);
 	if($value=="") {
-		$warning .= $lang_error_warning_miss." ".info($key, $value)." ...<br/>";
+		if(!preg_match("/(opens_su|closes_su)/i", $key)) // do not consider sunday opening hours for warnings
+			$warning .= $lang_error_warning_miss." ".info($key, $value)." ...<br/>";
 		continue;
 	}
 	switch($key) {

@@ -11,10 +11,48 @@ $(document).ready(function() {
 		select: function(event, ui) {
 			var lemma = ui.item.value.replace(/ /g, "_");
 			lemmat = ui.item.value.replace(/ /g, "_");
-			var pto_link = "http://productontology.org/id/"+lemma;
+			var pto_link = "http://www.productontology.org/id/"+lemma;
 			$("input#category_link").attr("value", pto_link);
 			$("div#pto_link").html("<a href=\""+pto_link+"\">pto:"+lemma+"</a>");
 		}
+	});
+	
+	$("a#selectA_CH_D").click(function(e) {
+		e.preventDefault();
+		selObj = document.getElementById('eligibleregions');
+		for (i = 0; i < selObj.options.length; i++) {
+			regionlist = ['AT', 'CH', 'DE'];
+			if (regionlist.indexOf(selObj.options[i].value) >= 0) {
+				selObj.options[i].selected=true;
+			}
+		}
+	});
+	$("a#selectEU").click(function(e) {
+		e.preventDefault();
+		selObj = document.getElementById('eligibleregions');
+		for (i = 0; i < selObj.options.length; i++) {
+			regionlist = ['AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','GB','IE','IT','HU','LV','LT','LU','MT','NL','PL','PT','RO','SE','SK','SI'];
+			if (regionlist.indexOf(selObj.options[i].value) >= 0) {
+				selObj.options[i].selected=true;
+			}
+		}
+	});
+	$("a#selectNone").click(function(e) {
+		e.preventDefault();
+		selObj = document.getElementById('eligibleregions');
+		for (i = 0; i < selObj.options.length; i++) {
+			selObj.options[i].selected=false;
+		}
+	});
+	$("#validfrom").datetimepicker({
+		dateFormat: "yy-mm-dd",
+		timeFormat: "hh:mm:ss\Z",
+		separator: "T"
+	});
+	$("#validthrough").datetimepicker({
+		dateFormat: "yy-mm-dd",
+		timeFormat: "hh:mm:ss\Z",
+		separator: "T"
 	});
 });
 

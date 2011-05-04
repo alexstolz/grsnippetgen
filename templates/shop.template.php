@@ -40,11 +40,11 @@ if($latitude || $longitude)
 	$shop->add_rel("vcard:geo", $geo);
 // mondays through fridays
 $opening_hours_mofr = new Resource("#mon_fri", "gr:OpeningHoursSpecification");
-$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Friday");
-$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Thursday");
-$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Wednesday");
-$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Tuesday");
 $opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Monday");
+$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Tuesday");
+$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Wednesday");
+$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Thursday");
+$opening_hours_mofr->add_rel("gr:hasOpeningHoursDayOfWeek", "http://purl.org/goodrelations/v1#Friday");
 if($opens_mofr)
 	$opening_hours_mofr->add_property("gr:opens", $opens_mofr.":00", "xsd:time");
 if($closes_mofr)

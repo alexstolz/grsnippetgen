@@ -92,3 +92,9 @@ a {
 	-webkit-border-top-left-radius: 1em;
 	-webkit-border-top-right-radius: 1em;
 }
+.ui-datepicker { margin-left: -100px; }
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 80%; }

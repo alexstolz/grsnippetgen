@@ -14,12 +14,12 @@ $lang_conf_street_address =
 $lang_conf_tel =
 	"Telefon (vorgeschlagenes Format: +49-0123-456789)";
 $lang_conf_company_depiction =
-	"URL des Firmenlogos (e.g. http://www.example.com/image.(jpg|png|gif|svg))";
+	"URL des Firmenlogos (z.B. http://www.example.com/image.(jpg|png|gif|svg))";
 // shop only
 $lang_conf_store_name =
 	"Name der Geschäftsstelle";
 $lang_conf_store_depiction =
-	"URL des Geschäftslogos (e.g. http://www.example.com/image.(jpg|png|gif|svg))";
+	"URL des Geschäftslogos (z.B. http://www.example.com/image.(jpg|png|gif|svg))";
 $lang_conf_latitude =
 	"Breitengrad";
 $lang_conf_longitude =
@@ -44,17 +44,21 @@ $lang_conf_product_name =
 $lang_conf_description =
 	"Produktbeschreibung";
 $lang_conf_lang =
-	"Sprache der Produktbeschreibung (wählen Sie eine Sprache aus <a href=\"http://en.wikipedia.org/wiki/ISO_639-1\">ISO 639-1</a>, z.B. \"en\" oder \"de\")";
+	"Sprache der Produktbeschreibung (<br />wählen Sie eine Sprache aus <a href=\"http://en.wikipedia.org/wiki/ISO_639-1\">ISO 639-1</a>, z.B. \"en\" oder \"de\")";
 $lang_conf_product_page =
-	"URL der Produkt-Detailseite (e.g. http://www.example.com/product/)";
+	"URL der Produkt-Detailseite (z.B. http://www.example.com/product/)";
 $lang_conf_product_depiction =
-	"URL des Produktbildes (e.g. http://www.example.com/image.(jpg|png|gif|svg))";
+	"URL des Produktbildes (z.B. http://www.example.com/image.(jpg|png|gif|svg))";
 $lang_conf_gtin_13 =
 	"EAN-13, 13-stelliger UPC, oder 13-stelliger ISBN Code für das Produkt";
 $lang_conf_currency =
-	"(3-stelliger <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a>-Währungscode, z.B. \"EUR\" oder \"USD\", sowie Preis des Produkts wählen)";
+	"(<br />3-stelliger <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a>-Währungscode, z.B. \"EUR\" oder \"USD\", sowie Preis des Produkts wählen)";
 $lang_conf_price =
 	"Produktpreis";
+$lang_conf_validfrom =
+	"Gültigkeit des Produktangebots <strong>von</strong> (Datumsformat ".date("d.m.Y\T00:00:00\Z").")";
+$lang_conf_validthrough =
+	"Gültigkeit des Produktangebots <strong>bis</strong> (Datumsformat ".date("d.m.Y\T23:59:00\Z", mktime(date()+24*365)).")";
 
 /* index */
 $lang_step = "Schritt";
@@ -120,6 +124,29 @@ $lang_controller_notify_currency_code =
 	"Sie können auch einen eigenen Währungscode eingeben, der in der Liste nicht aufgeführt ist";
 $lang_controller_notify_price =
 	"Preis";
+// is placeholder or actual product or service
+$lang_controller_prodtype_title = "Unbestimmtes Produkt (z.B. mehrere Produkte desselben Typs im Angebot)";
+$lang_controller_prodtype_hint = "(<br />nicht anzukreuzen, falls ein bestimmter, z.B. benutzter Artikel angeboten wird)";
+// delivery methods
+$lang_controller_deliverymethod_directdownload = "Download";
+$lang_controller_deliverymethod_freight = "Paketfracht";
+$lang_controller_deliverymethod_mail = "Post";
+$lang_controller_deliverymethod_ownfleet = "Eigenes Fahrzeug";
+$lang_controller_deliverymethod_pickup = "Selbstabholung";
+$lang_controller_notify_deliverymethods = "Wählen Sie die zutreffenden Versandarten aus (STRG+Click)";
+$lang_controller_deliverymethod_title = "Versandmöglichkeiten";
+$lang_controller_deliverymethod_hint = "(<br />siehe <a href=\"http://purl.org/goodrelations/v1#DeliveryMethod\">vordefinierte Instanzen für Versandarten</a> in GoodRelations)";
+// business functions
+$lang_controller_busfun_constructioninstallation = "Konstruktion/Installation";
+$lang_controller_busfun_dispose = "Entsorgung";
+$lang_controller_busfun_leaseout = "Vermietung";
+$lang_controller_busfun_maintain = "Wartung";
+$lang_controller_busfun_provideservice = "Dienstleistung";
+$lang_controller_busfun_repair = "Reparatur";
+$lang_controller_busfun_sell = "Verkauf";
+$lang_controller_notify_businessfunction = "Wählen Sie eine für das Produkt passende Unternehmensfunktion aus";
+$lang_controller_businessfunction_title = "Unternehmensfunktion";
+$lang_controller_businessfunction_hint = "(<br />siehe <a href=\"http://purl.org/goodrelations/v1#BusinessFunction\">vordefinierte Instanzen für Unternehmensfunktionen</a> in GoodRelations)";
 // payment methods
 $lang_controller_paymethod_banktransferinadvance = "Vorkasse";
 $lang_controller_paymethod_invoice = "Rechnung";
@@ -132,7 +159,26 @@ $lang_controller_notify_paymethods =
 $lang_controller_paymentmethod_title =
 	"Zahlungsmethoden";
 $lang_controller_paymentmethod_hint =
-	"(siehe <a href=\"http://purl.org/goodrelations/v1#PaymentMethod\">vordefinierte Instanzen der Zahlungsmethoden</a> in GoodRelations)";
+	"(<br />siehe <a href=\"http://purl.org/goodrelations/v1#PaymentMethod\">vordefinierte Instanzen für Zahlungsmethoden</a> in GoodRelations)";
+// customer types
+$lang_controller_customer_enduser = "Endverbraucher";
+$lang_controller_customer_business = "Unternehmen";
+$lang_controller_customer_public = "Öffentliche Einrichtungen";
+$lang_controller_customer_reseller = "Wiederverkäufer";
+$lang_controller_notify_customertypes =
+	"Wählen Sie mögliche Geschäftspartner für dieses Produkt (STRG+Click)";
+$lang_controller_customertype_title =
+	"Geschäftspartner";
+$lang_controller_customertype_hint =
+	"(<br />siehe <a href=\"http://purl.org/goodrelations/v1#BusinessEntityType\">vordefinierte Instanzen für Typen von Geschäftspartnern</a> in GoodRelations)";
+// eligible regions
+$lang_controller_notify_eligibleregions =
+	"Wählen Sie Länder aus, für die das Angebot gültig ist (STRG+Click)";
+$lang_controller_eligibleregion_title =
+	"Gültige Länder";
+$lang_controller_eligibleregion_hint =
+	"(<br /><a href=\"#\" id=\"selectA_CH_D\">A, CH and D auswählen</a><br /><a href=\"#\" id=\"selectEU\">EU Mitgliedsstaaten auswählen</a><br /><a href=\"#\" id=\"selectNone\">Auswahl zurücksetzen</a>)";
+
 $lang_controller_submit_button =
 	"Code Snippet generieren";
 $lang_controller_allow_logging =

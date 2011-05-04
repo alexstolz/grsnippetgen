@@ -44,7 +44,7 @@ $lang_conf_product_name =
 $lang_conf_description =
 	"Description of the product";
 $lang_conf_lang =
-	"Language of the description (select language code from <a href=\"http://en.wikipedia.org/wiki/ISO_639-1\">ISO 639-1</a>, e.g. \"en\" or \"de\")";
+	"Language of the description (<br />select language code from <a href=\"http://en.wikipedia.org/wiki/ISO_639-1\">ISO 639-1</a>, e.g. \"en\" or \"de\")";
 $lang_conf_product_page =
 	"URL of the product detail page (e.g. http://www.example.com/product/)";
 $lang_conf_product_depiction =
@@ -52,9 +52,13 @@ $lang_conf_product_depiction =
 $lang_conf_gtin_13 =
 	"EAN-13, 13-digit UPC, or 13-digit ISBN code for the product";
 $lang_conf_currency =
-	"(select 3-letter <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> currency code, e.g. \"EUR\" or \"USD\", and price for product)";
+	"(<br />select 3-letter <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> currency code, e.g. \"EUR\" or \"USD\", and price for product)";
 $lang_conf_price =
 	"Price for product";
+$lang_conf_validfrom =
+	"<strong>Validity start</strong> of product offering (date format ".date("d.m.Y\T00:00:00\Z").")";
+$lang_conf_validthrough =
+	"<strong>Validity end</strong> of product offering (date format ".date("d.m.Y\T23:59:00\Z", mktime(date()+24*365)).")";
 
 /* index */
 $lang_step = "Step";
@@ -120,6 +124,29 @@ $lang_controller_notify_currency_code =
 	"you may enter a custom currency code that is not defined in the list";
 $lang_controller_notify_price =
 	"price value";
+// is placeholder or actual product or service
+$lang_controller_prodtype_title = "Anonymous product (e.g. multiple article items for sale)";
+$lang_controller_prodtype_hint = "(<br />do not cross if offering a certain, maybe used article)";
+// delivery methods
+$lang_controller_deliverymethod_directdownload = "direct download";
+$lang_controller_deliverymethod_freight = "freight";
+$lang_controller_deliverymethod_mail = "mail";
+$lang_controller_deliverymethod_ownfleet = "own fleet";
+$lang_controller_deliverymethod_pickup = "pick up";
+$lang_controller_notify_deliverymethods = "select applicable delivery modes";
+$lang_controller_deliverymethod_title = "Delivery method";
+$lang_controller_deliverymethod_hint = "(<br />see <a href=\"http://purl.org/goodrelations/v1#DeliveryMethod\">predefined delivery methods individuals</a> in GoodRelations)";
+// business functions
+$lang_controller_busfun_constructioninstallation = "construction/installation";
+$lang_controller_busfun_dispose = "dispose";
+$lang_controller_busfun_leaseout = "lease out";
+$lang_controller_busfun_maintain = "maintain";
+$lang_controller_busfun_provideservice = "provide service";
+$lang_controller_busfun_repair = "repair";
+$lang_controller_busfun_sell = "sell";
+$lang_controller_notify_businessfunction = "select a business function for the product";
+$lang_controller_businessfunction_title = "Business function";
+$lang_controller_businessfunction_hint = "(<br />see <a href=\"http://purl.org/goodrelations/v1#BusinessFunction\">predefined business function individuals</a> in GoodRelations)";
 // payment methods
 $lang_controller_paymethod_banktransferinadvance = "bank transfer in advance";
 $lang_controller_paymethod_invoice = "invoice";
@@ -132,7 +159,26 @@ $lang_controller_notify_paymethods =
 $lang_controller_paymentmethod_title =
 	"Payment methods";
 $lang_controller_paymentmethod_hint =
-	"(see <a href=\"http://purl.org/goodrelations/v1#PaymentMethod\">predefined payment method individuals</a> in GoodRelations)";
+	"(<br />see <a href=\"http://purl.org/goodrelations/v1#PaymentMethod\">predefined payment method individuals</a> in GoodRelations)";
+// customer types
+$lang_controller_customer_enduser = "end user";
+$lang_controller_customer_business = "business";
+$lang_controller_customer_public = "public institution";
+$lang_controller_customer_reseller = "reseller";
+$lang_controller_notify_customertypes =
+	"select multiple business partners (control+click)";
+$lang_controller_customertype_title =
+	"Business partners";
+$lang_controller_customertype_hint =
+	"(<br />see <a href=\"http://purl.org/goodrelations/v1#BusinessEntityType\">predefined business partner individuals</a> in GoodRelations)";
+// eligible regions
+$lang_controller_notify_customertypes =
+	"select multiple regions for which the offer is valid (control+click)";
+$lang_controller_customertype_title =
+	"Eligible regions";
+$lang_controller_customertype_hint =
+	"(<br /><a href=\"#\" onclick=\"javascript:selectAT_CH_DE(); return false\">select A, CH and D</a><br /><a href=\"#\" onclick=\"javascript:selectEU(); return false\">select EU member states</a><br /><a href=\"#\" onclick=\"javascript:clearAll(); return false\">deselect all</a>)";
+
 $lang_controller_submit_button =
 	"Generate Code Snippet";
 $lang_controller_allow_logging =

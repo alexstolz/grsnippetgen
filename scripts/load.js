@@ -44,12 +44,12 @@ $(document).ready(function() {
 			selObj.options[i].selected=false;
 		}
 	});
-	$("#validfrom").datetimepicker({
+	$("#offer_validfrom").datetimepicker({
 		dateFormat: "yy-mm-dd",
 		timeFormat: "hh:mm:ss\Z",
 		separator: "T"
 	});
-	$("#validthrough").datetimepicker({
+	$("#offer_validthrough").datetimepicker({
 		dateFormat: "yy-mm-dd",
 		timeFormat: "hh:mm:ss\Z",
 		separator: "T"

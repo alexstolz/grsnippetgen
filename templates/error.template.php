@@ -38,7 +38,7 @@ foreach($arr as $key=>$value) {
 	}
 	$value = trim($value);
 	if($value=="") {
-		if(!preg_match("/(opens_su|closes_su)/i", $key)) // do not consider sunday opening hours for warnings
+		if(!preg_match("/(opens_su|closes_su|category_link)/i", $key)) // do not consider sunday opening hours for warnings
 			$warning .= $lang_error_warning_miss." ".info($key, $value)." ...<br/>";
 		continue;
 	}

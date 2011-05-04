@@ -85,21 +85,21 @@ if($template_type == '')
 		/* validfrom */
 		if($token1=="validfrom") {
 	?>
-		<tr><td style="width:480px"><?php echo $token2 ?></td><td><input style="width:200px" id="validfrom" type="text" /></td></tr>
+		<tr><td style="width:480px"><?php echo $token2 ?></td><td><input style="width:200px" id="<?php echo $template_type."_".$token1 ?>" type="text" /></td></tr>
 	<?php
 			continue;
 		}
 		/* validthrough */
 		if($token1=="validthrough") {
 	?>
-		<tr><td style="width:480px"><?php echo $token2 ?></td><td><input style="width:200px" id="validthrough" type="text" /></td></tr>
+		<tr><td style="width:480px"><?php echo $token2 ?></td><td><input style="width:200px" id="<?php echo $template_type."_".$token1 ?>" type="text" /></td></tr>
 	<?php
 			continue;
 		}
 		/* category */
 		if($token1=="category") {
 	?>
-		<tr><td style="width:480px"><?php echo $lang_controller_category ?></td><td><input style="width:480px" id="category" type="text" /><input type="hidden" id="category_link" /><div id="pto_link"></div></td></tr>
+		<tr><td style="width:480px"><?php echo $lang_controller_category ?></td><td><input style="width:480px" id="<?php echo $template_type."_".$token1 ?>" type="text" /><input type="hidden" id="<?php echo $template_type."_category_link" ?>" /><div id="pto_link"></div></td></tr>
 	<?php
 			continue;
 		}

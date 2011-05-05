@@ -1,8 +1,10 @@
 <?php
 /* config */
+$lang_fillin = "This box is highly recommended to fill in";
+$mandatory_field = "<span class=\"mandatory\" title=\"$lang_fillin\">*</span>";
 // company, and shop (address)
 $lang_conf_legal_name =
-	"Legal name of your company";
+	$mandatory_field."Legal name of your company";
 $lang_conf_country_name =
 	"Country";
 $lang_conf_locality =
@@ -17,7 +19,7 @@ $lang_conf_company_depiction =
 	"URL of a logo or image (e.g. http://www.example.com/image.(jpg|png|gif|svg))";
 // shop only
 $lang_conf_store_name =
-	"Name of store or location";
+	$mandatory_field."Name of store or location";
 $lang_conf_store_depiction =
 	"URL of a logo or image (e.g. http://www.example.com/image.(jpg|png|gif|svg))";
 $lang_conf_latitude =
@@ -37,10 +39,10 @@ $lang_conf_opens_su =
 $lang_conf_closes_su =
 	"Closing hours for Sunday (proposed scheme: 12:00)";
 $lang_conf_page =
-	"Web page describing your company (e.g. http://www.example.com/)";
+	$mandatory_field."Web page describing your company (shop and offers will point to this URL, e.g. http://www.example.com/)";
 // offer
 $lang_conf_product_name =
-	"Name of the product";
+	$mandatory_field."Name of the product";
 $lang_conf_description =
 	"Description of the product";
 $lang_conf_lang =
@@ -128,32 +130,32 @@ $lang_controller_notify_price =
 $lang_controller_prodtype_title = "Anonymous product (e.g. multiple article items for sale)";
 $lang_controller_prodtype_hint = "(<br />do not cross if offering a certain, maybe used article)";
 // delivery methods
-$lang_controller_deliverymethod_directdownload = "direct download";
-$lang_controller_deliverymethod_freight = "freight";
-$lang_controller_deliverymethod_mail = "mail";
-$lang_controller_deliverymethod_ownfleet = "own fleet";
-$lang_controller_deliverymethod_pickup = "pick up";
-$lang_controller_notify_deliverymethods = "select applicable delivery modes";
-$lang_controller_deliverymethod_title = "Delivery method";
+$lang_controller_deliverymethod_directdownload = "Direct download";
+$lang_controller_deliverymethod_freight = "Freight";
+$lang_controller_deliverymethod_mail = "Mail";
+$lang_controller_deliverymethod_ownfleet = "Own fleet";
+$lang_controller_deliverymethod_pickup = "Pick up";
+$lang_controller_notify_deliverymethods = "select applicable delivery modes (control+click)";
+$lang_controller_deliverymethod_title = "Delivery methods";
 $lang_controller_deliverymethod_hint = "(<br />see <a href=\"http://purl.org/goodrelations/v1#DeliveryMethod\">predefined delivery methods individuals</a> in GoodRelations)";
 // business functions
-$lang_controller_busfun_constructioninstallation = "construction/installation";
-$lang_controller_busfun_dispose = "dispose";
-$lang_controller_busfun_leaseout = "lease out";
-$lang_controller_busfun_maintain = "maintain";
-$lang_controller_busfun_provideservice = "provide service";
-$lang_controller_busfun_repair = "repair";
-$lang_controller_busfun_sell = "sell";
+$lang_controller_busfun_constructioninstallation = "Construction/Installation";
+$lang_controller_busfun_dispose = "Dispose";
+$lang_controller_busfun_leaseout = "Lease out";
+$lang_controller_busfun_maintain = "Maintain";
+$lang_controller_busfun_provideservice = "Provide service";
+$lang_controller_busfun_repair = "Repair";
+$lang_controller_busfun_sell = "Sell";
 $lang_controller_notify_businessfunction = "select a business function for the product";
 $lang_controller_businessfunction_title = "Business function";
 $lang_controller_businessfunction_hint = "(<br />see <a href=\"http://purl.org/goodrelations/v1#BusinessFunction\">predefined business function individuals</a> in GoodRelations)";
 // payment methods
-$lang_controller_paymethod_banktransferinadvance = "bank transfer in advance";
-$lang_controller_paymethod_invoice = "invoice";
-$lang_controller_paymethod_cash = "cash";
-$lang_controller_paymethod_checkinadvance = "check in advance";
-$lang_controller_paymethod_cashondelivery = "cash on delivery";
-$lang_controller_paymethod_directdebit = "direct debit";
+$lang_controller_paymethod_banktransferinadvance = "Bank transfer in advance";
+$lang_controller_paymethod_invoice = "Invoice";
+$lang_controller_paymethod_cash = "Cash";
+$lang_controller_paymethod_checkinadvance = "Check in advance";
+$lang_controller_paymethod_cashondelivery = "Cash on delivery";
+$lang_controller_paymethod_directdebit = "Direct debit";
 $lang_controller_notify_paymethods =
 	"select multiple payment methods (control+click)";
 $lang_controller_paymentmethod_title =
@@ -161,10 +163,10 @@ $lang_controller_paymentmethod_title =
 $lang_controller_paymentmethod_hint =
 	"(<br />see <a href=\"http://purl.org/goodrelations/v1#PaymentMethod\">predefined payment method individuals</a> in GoodRelations)";
 // customer types
-$lang_controller_customer_enduser = "end user";
-$lang_controller_customer_business = "business";
-$lang_controller_customer_public = "public institution";
-$lang_controller_customer_reseller = "reseller";
+$lang_controller_customer_enduser = "End user";
+$lang_controller_customer_business = "Business";
+$lang_controller_customer_public = "Public institution";
+$lang_controller_customer_reseller = "Reseller";
 $lang_controller_notify_customertypes =
 	"select multiple business partners (control+click)";
 $lang_controller_customertype_title =

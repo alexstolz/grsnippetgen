@@ -1,8 +1,10 @@
 <?php
 /* config */
+$lang_fillin = "Dieses Feld sollte unbedingt ausgefüllt werden";
+$mandatory_field = "<span class=\"mandatory\" title=\"$lang_fillin\">*</span>";
 // company, and shop (address)
 $lang_conf_legal_name =
-	"Firmenbezeichnung";
+	$mandatory_field."Firmenbezeichnung";
 $lang_conf_country_name =
 	"Land";
 $lang_conf_locality =
@@ -14,10 +16,10 @@ $lang_conf_street_address =
 $lang_conf_tel =
 	"Telefon (vorgeschlagenes Format: +49-0123-456789)";
 $lang_conf_company_depiction =
-	"URL des Firmenlogos (z.B. http://www.example.com/image.(jpg|png|gif|svg))";
+	"URL des Unternehmenslogos (z.B. http://www.example.com/image.(jpg|png|gif|svg))";
 // shop only
 $lang_conf_store_name =
-	"Name der Geschäftsstelle";
+	$mandatory_field."Name der Geschäftsstelle / des Shops";
 $lang_conf_store_depiction =
 	"URL des Geschäftslogos (z.B. http://www.example.com/image.(jpg|png|gif|svg))";
 $lang_conf_latitude =
@@ -37,10 +39,10 @@ $lang_conf_opens_su =
 $lang_conf_closes_su =
 	"Ladenschlusszeit am Sonntag (vorgegebenes Format: 12:00)";
 $lang_conf_page =
-	"Webseite der Firma (z.B. http://www.example.com/)";
+	$mandatory_field."Webseite des Unternehmens (Shop und Angebot werden auf diese Adresse zurückverweisen, z.B. http://www.example.com/)";
 // offer
 $lang_conf_product_name =
-	"Produktname";
+	$mandatory_field."Produktname";
 $lang_conf_description =
 	"Produktbeschreibung";
 $lang_conf_lang =
@@ -97,7 +99,7 @@ $lang_epilogue =
 $lang_controller_title =
 	"Erstellen Sie ein Rich Snippet für ";
 $lang_controller_title_company =
-	"Ihre Firma";
+	"Ihr Unternehmen";
 $lang_controller_title_shop =
 	"Ihre Geschäftsstelle";
 $lang_controller_title_offer =
@@ -105,7 +107,7 @@ $lang_controller_title_offer =
 $lang_controller_p1_shop =
 	"Dieser Schritt ist nur notwendig, falls Sie ein Shop oder eine Geschäftsstelle besitzen.";
 $lang_controller_p1_shop_button =
-	"Kopiere die Adressdaten von der Firma";
+	"Adressdaten vom Unternehmen kopieren";
 $lang_controller_p1_offer =
 	"GoodRelations ist am effektivsten, wenn Sie individuelle Daten für Ihre Produkte und Dienstleistungen veröffentlichen. Das ist v.a. relevant für dynamische Web Shops mit vielen Artikeln.";
 $lang_controller_geo_desc =
@@ -235,9 +237,9 @@ $lang_output_warning_supplement =
 $lang_output_success =
 	"Fehlerfrei";
 $lang_output_success_company =
-	"<p>Fein!<br/>Kopieren Sie nun das obige Codestück und fügen Sie es in Ihre <strong>Firmenwebseite</strong> ein, am besten direkt vor dem schließenden HTML BODY Tag. Danach fahren Sie mit Schritt 2 fort!</p>";
+	"<p>Fein!<br/>Kopieren Sie nun das obige Codestück und fügen Sie es in Ihre <strong>Unternehmenswebseite</strong> ein, am besten direkt vor dem schließenden HTML BODY Tag. Danach fahren Sie mit Schritt 2 fort!</p>";
 $lang_output_success_shop =
-	"<p>Sehr gut!<br/>Gehen Sie wie soeben vor indem Sie das Codefragment kopieren und dann in Ihre <strong>Shopwebseite</strong> einfügen. Falls die URI der Geschäftsstelle dieselbe wie die der Firma ist, dann platzieren Sie den Code zwischen die Firmenbeschreibung und das abschließende HTML BODY Tag. WICHTIG: Überprüfen Sie, ob gr:hasPOS richtig auf die Firmenwebseite verweist (z.B. http://www.example.com/#company). Falls nicht, so bessern Sie es aus. Dann können Sie mit Schritt 3 fortfahren!</p>";
+	"<p>Sehr gut!<br/>Gehen Sie wie soeben vor indem Sie das Codefragment kopieren und dann in Ihre <strong>Shopwebseite</strong> einfügen. Falls die URI der Geschäftsstelle dieselbe wie die des Unternehmens ist, dann platzieren Sie den Code zwischen die Unternehmensbeschreibung und das abschließende HTML BODY Tag. WICHTIG: Überprüfen Sie, ob gr:hasPOS richtig auf die Unternehmenswebseite verweist (z.B. http://www.example.com/#company). Falls nicht, so bessern Sie es aus. Dann können Sie mit Schritt 3 fortfahren!</p>";
 $lang_output_success_offer =
 	"<p>Ausgezeichnet!<br/>Ihre Produktbeschreibung ist valide und kann nun auf der <strong>Produkt-Detailseite</strong> veröffentlicht werden. Kopieren Sie wiederum das generierte Codestück und fügen es vor dem abschließenden HTML BODY Tag Ihrer Produktwebseite ein. Der vierte und letzte Schritt, der nun noch verbleibt, ist die Anpassung der Header ihrer Webseite.</p>";
 ?>

@@ -99,7 +99,7 @@ if($template_type == '')
 		/* category */
 		if($token1=="category") {
 	?>
-		<tr><td style="width:480px"><?php echo $lang_controller_category ?></td><td><input style="width:480px" id="<?php echo $template_type."_".$token1 ?>" type="text" /><input type="hidden" id="<?php echo $template_type."_category_link" ?>" /><div id="pto_link"></div></td></tr>
+		<tr><td style="width:480px"><?php echo $lang_controller_category ?></td><td><input style="width:480px" id="<?php echo $template_type."_".$token1 ?>" type="text" value="" /><input type="hidden" id="<?php echo $template_type."_category_link" ?>" /><div id="pto_link"></div></td></tr>
 	<?php
 			continue;
 		}
@@ -163,7 +163,7 @@ if($template_type == '')
 			foreach ($paymentmethods as $grindividual=>$desc) {
 				echo "<option value=\"".$grindividual."\">$desc</option>\n";
 			}
-			?></select><input id="offer_page" type="hidden" value="" /></td>
+			?></select></td>
 		</tr>
 	<?php
 	/* delivery methods */
@@ -218,9 +218,23 @@ if($template_type == '')
 	endif; // endif template type is offer
 	?>
 	</table>
+	<?php
+	switch($template_type) {
+		case "shop":
+		case "offer":
+	?>
+	<input id="<?php echo $template_type ?>_page" type="hidden" value="" />
+	<?php
+	}
+	?>
 	<p><input type="checkbox" id="<?php echo $template_type ?>_logging_allowed" checked="checked" value="true" onclick="javascript:swap_logging(this.id)" /><span style="font-size:11px;color:#666;"><?php echo $lang_controller_allow_logging ?></span>
 	</p>
-	<p><input id="<?php echo $template_type ?>_langcode" type="hidden" value="<?php echo $lang ?>" /><input id="<?php echo $template_type ?>_button" type="button" value="<?php echo $lang_controller_submit_button ?>" onclick="javascript:reload('<?php echo $template_type ?>')<?php echo ($template_type=="shop"?";document.getElementById('offer_page').value=document.getElementById('shop_page').value":"") ?>" /></p>
+	<p><input id="<?php echo $template_type ?>_langcode" type="hidden" value="<?php echo $lang ?>" /><input id="<?php echo $template_type ?>_button" type="button" value="<?php echo $lang_controller_submit_button ?>" onclick="<?php
+	if ($template_type == "shop")
+		echo "document.getElementById('shop_page').value=document.getElementById('company_page').value";
+	elseif ($template_type == "offer")
+		echo "document.getElementById('offer_page').value=document.getElementById('company_page').value";
+	?>;javascript:reload('<?php echo $template_type ?>')" /></p>
 	</form>
 	<div id="<?php echo $template_type ?>_snippet" class="pre"></div>
 <?php

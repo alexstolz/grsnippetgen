@@ -1,5 +1,6 @@
 <?php
 $config = array(
+	"page"					=>	$lang_conf_page,
 	"legal_name"			=>	$lang_conf_legal_name,
 	"country_name"			=>	$lang_conf_country_name,
 	"locality"				=>	$lang_conf_locality,

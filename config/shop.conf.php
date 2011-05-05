@@ -14,7 +14,6 @@ $config = array(
 	"opens_sa"				=>	$lang_conf_opens_sa,
 	"closes_sa"				=>	$lang_conf_closes_sa,
 	"opens_su"				=>	$lang_conf_opens_su,
-	"closes_su"				=>	$lang_conf_closes_su,
-	"page"					=>	$lang_conf_page
+	"closes_su"				=>	$lang_conf_closes_su
 );
 ?>

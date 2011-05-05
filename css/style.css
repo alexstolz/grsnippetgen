@@ -33,6 +33,12 @@ h2 {
 .button:hover {
 	color: white;
 }
+span.mandatory {
+	font-weight: bold;
+	color: red;
+	float: right;
+	padding: 0 3px 0 6px;
+}
 div.pre_static, div.snippet {
 	padding: 0.5em 1em 0.5em 1em;
 	border: #2f6fab dashed 1px;

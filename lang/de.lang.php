@@ -1,4 +1,28 @@
 <?php
+/* slider */
+$lang_slider_slide_label = "Folie";
+$lang_slider_slide1_title = "Quickstart: Ein Shop mit einem Angebot";
+$lang_slider_slide2_title = "Zwei Shops auf verschiedenen Seiten (ohne Angebote)";
+$lang_slider_slide3_title = "Zwei Shops auf derselben Seite (ohne Angebote)";
+$lang_slider_slide4_title = "Zwei Angebote auf verschiedenen Seiten";
+$lang_slider_slide5_title = "Zwei Angebote auf derselben Seite";
+$lang_slider_slide1 = 
+	"<p>Das fiktive Unternehmen ACME GmbH besitzt eine Webpräsenz unter http://www.acme.com/. Es unterhält weiterhin eine Shop-Seite, die unter der Subdomäne http://store.acme.com/ verfügbar ist. Dort wird u.a. ein Produkt des Unternehmens unter der Adresse http://store.acme.com/product/ zum Verkauf angeboten.</p>
+<p>Der die Firma beschreibende RDFa-Code sollte direkt auf der Seite http://www.acme.com/ veröffentlicht werden, kann ggf. aber auch auf einer der Seiten \"Über uns\" oder \"Kontakt\" eingepflegt werden. Anschließend kann das Unternehmen von Semantic Web Applikationen oder Suchmaschinen unter der URI http://www.acme.com/#company gefunden werden. Die das Unternehmen beschreibende Adresse leitet sich zum einen aus der URL der Webseite (http://www.acme.com/) und zum anderen aus dem Identifier (#company) ab, der lokal auf der Unternehmenswebseite definiert wird (damit dereferenzierbar ist) und die eigentliche Ressource beschreibt.</p>
+<p>Dieselbe Vorgehensweise kann für die Shop-Webseite und die Produktseite übernommen werden. Deren Semantic Web Adressen lauten demnach http://store.acme.com/#store bzw. http://store.acme.com/product/#offer. Die rev-Links im RDFa-Code stellen eine Verbindung zwischen den Adressen (Shop URI und Produkt URI) und der URI des Unternehmens dar, d.h. rev ist eine inverse Beziehung zwischen Unternehmen und Shop/Geschäftsstelle (gr:hasPOS) bzw. zwischen Unternehmen und Angebot (gr:offers).</p>";
+$lang_slider_slide2 = 
+	"<p>Dieses Beispiel illustriert wie zwei Shops oder Geschäftsstellen verteilt auf verschiedene Standorte mithilfe von GoodRelations fast mühelos definiert werden können. Im vorliegenden Beispiel werden zwei Subdomänen für die Shops angenommen.</p>
+<p>Der Nutzer des Tools muss lediglich das Formular für den Shop ausfüllen und die jeweils korrekte URL der Subdomäne angeben. Die einzugebenden URLs für die Veröffentlichung der RDFa Snippets sind http://store1.acme.com/ und http://store2.acme.com/. Die inverse Relation gr:hasPOS muss dabei jeweils auf die Adresse http://www.acme.com/#company verweisen.</p>";
+$lang_slider_slide3 = 
+	"<p>In diesem Beispiel werden die beiden Shops unter ein und derselben URL einer Webseite veröffentlicht.</p>
+<p>Fall beide Shops des Unternehmens (z.B. Standort der Geschäftsstellen) auf derselben Webseite veröffentlicht werden, dann sollten auch deren Semantic Web-Ressourcen auf dieser gemeinsamen Seite definiert werden, d.h. zwei RDFa Snippets werden erzeugt (eine pro Shop) und anschließend z.B. untereinander im Quellcode der gemeinsamen Webseite platziert http://stores.acme.com/. Um evtl. Mehrfachdefinitionen derselben URI zu vermeiden, müssen die Identifier für die Shops umbenannt werden, d.h. beispielsweise zu #store1 und #store2. Das Tool übernimmt diese Aufgabe nicht, dennoch ist es einfach ein RDFa Snippet pro Shop zu erzeugen und die Vorkommnisse von #store durch z.B. #store1 bzw. #store2 zu ersetzen.</p>";
+$lang_slider_slide4 = 
+	"<p>Dieses Beispiel zeigt, wie zwei Angebote an ein Unternehmen geknüpft werden können. Dieses Beispiel ist ähnlich dem bereits auf Folie 2 präsentierten Fall.</p>
+    <p>Wir nehmen an, dass der Shop http://store.acme.com/ mehrere Produkte anbietet. Wir demonstrieren das Beispiel anhand von zwei Angeboten. Jedes Produkt des Shops erhält eine eindeutige Produkt URL, d.h. es gibt keine Überschneidungen zwischen den URLs der einzelnen Produkte. Man kann nun für jedes Produkt ein RDFa Snippet erzeugen und es in den Quellcode der entsprechenden Seite einpflegen (http://store.acme.com/product1/ und http://store.acme.com/product2/). Die Angebote verweisen automatisch mittels \"rev gr:offers\" auf die URI des Unternehmens, das die Produkte anbietet. Die URIs der Angebote für das Semantic Web lauten http://store.acme.com/product1/#offer und http://store.acme.com/product2/#offer und sind dereferenzierbar.</p>";
+$lang_slider_slide5 = 
+	"<p>Das letzte Beispiel präsentiert, wie mehrere Produktangebote auf einer einzelnen Webseite (unter einer URL) definiert werden können.</p>
+<p>Ähnlich wie im Shop Szenario ist es möglich, dass mehrere Angebote unter ein und derselben Adresse verfügbar gemacht werden. D.h. die Angebote teilen sich eine gemeinsame URL und müssen daher über deren Identifier unterscheidbar gemacht werden.</p>
+<p>Unter der Annahme, dass die Produkt-URL http://store.acme.com/products/ ist, dann sind die URIs der entsprechenden Angebote http://store.acme.com/products/#offer1 und http://store.acme.com/products/#offer2. Das vorliegende Tool kann solche eindeutigen Identifier nicht erzeugen, daher müssen diese händisch umbenannt werden von z.B. #offer in #offer1, #offer2, usw.</p>";
 /* config */
 $lang_fillin = "Dieses Feld sollte unbedingt ausgefüllt werden";
 $mandatory_field = "<span class=\"mandatory\" title=\"$lang_fillin\">*</span>";
@@ -74,12 +98,28 @@ $lang_mod_header =
 	"Update des XHTML/HTML Headers";
 $lang_mod_header_p1 =
 	"<p>Sobald Sie die Codefragmente in die entsprechenden Webseiten eingebaut haben, sollten Sie die Web Crawler über das Update informieren. Dieser Vorgang ist auch denkbar einfach:</p>
-	<p>Ändern Sie die DOCTYPE-Deklaration im Header zu \"XHTML+RDFa\": </p>";
+	<p>Sie können GoodRelations in RDFa in Verbindung mit XHTML, HTML5 oder auch HTML4 Code verwenden, ungeachtet des Standardisierungsfortschritts der verwendeten DOCTYPE-Deklaration.</p";
+$lang_mod_header_xhtml =
+	"XHTML";
+$lang_mod_header_xhtml_li1 =
+	"Setzen Sie den DOCTYPE auf \"XHTML+RDFa 1.0\":";
+$lang_mod_header_xhtml_li2 =
+	"Fügen Sie ein Versions-Attribut mit dem Inhalt \"XHTML+RDFa 1.0\" in das HTML-ELement ein:";
+$lang_mod_header_xhtml_li3 =
+	"Überprüfen Sie, ob das &lt;head&gt;-Element den passenden Content-Type und das passende Encoding für XHTML besitzt:";
+$lang_mod_header_html5 =
+	"HTML5";
+$lang_mod_header_html5_li1 =
+	"Setzen Sie den DOCTYPE auf \"html\":";
+$lang_mod_header_html5_li2 =
+	"Fügen Sie ein Versions-Attribut mit dem Inhalt \"HTML+RDFa 1.1\" in das HTML-ELement ein:";
+$lang_mod_header_html =
+	"Andere HTML-Standards";
+$lang_mod_header_html_li1 =
+	"Verwenden Sie entweder das obige HTML5 Rezept oder setzen Sie das Versions-Attribut des HTML-Elements auf \"HTML+RDFa 1.1\" oder \"XHTML+RDFa 1.0\". Viele Web-Clients werden hieraus dann entsprechend RDF-Inhalte generieren. Entweder";
+$lang_mod_header_html_li2 =
+	"oder";
 $lang_mod_header_p2 =
-	"<p>Fügen Sie dem &lt;html&gt;-Element Ihrer Webseiten ein \"xmlns\"-Attribut mit dem Wert \"http://www.w3.org/1999/xhtml\" und ein \"version\"-Attribut mit dem Wert \"HTML+RDFa 1.0\" hinzu: </p>";
-$lang_mod_header_p3 =
-	"<p>Überprüfen Sie, ob das &lt;head&gt;-Element den passenden Content-Type und das passende Encoding für XHTML besitzt:</p>";
-$lang_mod_header_p4 =
 	"<p>Wir können Ihnen dabei helfen, die neu hinzugefügten GoodRelations-Inhalte Ihrer Webseite im Web of Linked Data zu publizieren. Hierzu bieten wir einen Online-Dienst an, bei dem Sie ihre Webseite eintragen können. Wir übernehmen dann für Sie die Weiterleitung. Der Dienst befindet sich <a href=\"http://gr-notify.appspot.com/\">hier</a>.</p>";
 $lang_additional_resources =
 	"Weitere Ressourcen";

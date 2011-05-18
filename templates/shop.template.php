@@ -3,7 +3,7 @@ $template_name = "shop";
 include('error.template.php');
 
 /* create shop snippet */
-$shop = new Resource("#store", "gr:LocationOfSalesOrServiceProvisioning");
+$shop = new Resource("#store", "gr:Location");
 if($page)
 	$shop->add_rev("gr:hasPOS", $page);
 else
@@ -30,7 +30,7 @@ if($tel) {
 //	$r_tel->add_rel("rdf:type", "http://www.w3.org/2006/vcard/ns#Voice");
 }
 if($depiction)
-	$shop->add_rel("foaf:depiction", $depiction);
+	$shop->add_rel("foaf:logo", $depiction);
 $geo = new Resource(null, null);
 if($latitude)
 	$geo->add_property("vcard:latitude", number_format($latitude, 5, ".", ""), "xsd:float");

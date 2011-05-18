@@ -1,4 +1,29 @@
 <?php
+/* slider */
+$lang_slider_slide_label = "Slide";
+$lang_slider_slide1_title = "Quickstart: One store with one offer";
+$lang_slider_slide2_title = "Two stores on separate pages (offers omitted)";
+$lang_slider_slide3_title = "Two stores on the same page (offer omitted)";
+$lang_slider_slide4_title = "Two offers on separate pages";
+$lang_slider_slide5_title = "Two offers on the same page";
+$lang_slider_slide1_text = 
+	"<p>The company ACME Inc. owns a website hosted at http://www.acme.com/. Its web shop is published under a subdomain http://store.acme.com/, wherein the company offers the product as available at http://store.acme.com/product/.</p>
+<p>The RDFa code for the company ACME Inc. should be embedded into http://www.acme.com/ directly or, what would also be fine, into the \"about\"-page of the company. Afterwards, the company can be addressed by any Semantic Web application or search engine via http://www.acme.com/#company. The URI consists of the representative URL of the company (http://www.acme.com/) and the Semantic Web identifier (#company) that is defined locally on the company's web page (and hence dereferencable by any agent).</p>
+<p>The same proceeding applies to the resources for shop and offering. Their addresses for the Semantic Web are http://store.acme.com/#store and http://store.acme.com/product/#offer, respectively. The rev-links in their RDFa codes relate them (the shop URI and the offer URI) to the company URI, i.e. rev is an inverse relationship between company and shop (gr:hasPOS) and company and offer (gr:offers), respectively.</p>";
+$lang_slider_slide2_text = 
+	"<p>Two stores instead of one tied to a company can be modeled with ease in GoodRelations.</p>
+<p>This example shows how two stores available at different locations (here under different subdomains) can be defined.</p>
+<p>The user has just to fill in the forms for the shop/store and provide the correct subdomain URL for each of them. The locations for the publication of the RDFa snippets are supposed to be http://store1.acme.com/ and http://store2.acme.com/, respectively. Their inverse property gr:hasPOS should in both cases correctly point at http://www.acme.com/#company.</p>";
+$lang_slider_slide3_text = 
+	"<p>This example shows how two store resources can be published on the same page.</p>
+<p>If two shops of a company share the same web page, they can and should be published under one common URL, i.e. two RDFa snippets have to be generated (one for each shop) and pasted into the page http://stores.acme.com/. To avoid clashes between the two URIs, the identifiers have to be named differently, i.e. #store1 and #store2. This cannot be fulfilled by the tool and should be done manually instead. Just replace one #store by #store1 and the other #store by #store2 or similar.</p>";
+$lang_slider_slide4_text = 
+	"<p>This example shows how two offers instead of one can be tied to one company. It is basically the same procedure as already described in the example on slide 2.</p>
+    <p>Suppose the shop located at http://store.acme.com/ is offering multiple offers. For the sake of simplicity, we show the example with two offers only. Each product offered by the shop has got a unique product URL. Now generate for each offer an RDFa snippet and embed it into the respective pages (http://store.acme.com/product1/ and http://store.acme.com/product2/). The offers will link back (via \"rev gr:offers\") to the company which offers the products. The offering resources for the Semantic Web are dereferencable via http://store.acme.com/product1/#offer and http://store.acme.com/product2/#offer, respectively.</p>";
+$lang_slider_slide5_text = 
+	"<p>This final example describes the case where two offers share the same publication URL.</p>
+<p>Similar as in the web shop scenario, it is imaginable that two offers are accessible under the same location on a website. Then they share the same URL and need Semantic Web identifiers that make them distinguishable.</p>
+<p>Suppose the product URL is http://store.acme.com/products/, then the URIs for the offers are http://store.acme.com/products/#offer1 and http://store.acme.com/products/#offer2. The output of the snippet generator tool doesn't craft such unique identifiers, hence it is up to the user to rename #offer by #offer1, #offer2, ... or similar.</p>";
 /* config */
 $lang_fillin = "This box is highly recommended to fill in";
 $mandatory_field = "<span class=\"mandatory\" title=\"$lang_fillin\">*</span>";
@@ -74,12 +99,28 @@ $lang_mod_header =
 	"Updating the XHTML/HTML page header";
 $lang_mod_header_p1 =
 	"<p>Once you will have inserted the snippets into the respective pages, you should indicate their existence to crawlers. That is also pretty easy:</p>
-	<p>Change the DOCTYPE in the header to \"XHTML+RDFa\": </p>";
+	<p>You can use GoodRelations in RDFa in XHTML, HTML5, and HTML4 templates, despite the different state of the standardization of respective DOCTYPEs.</p>";
+$lang_mod_header_xhtml =
+	"XHTML";
+$lang_mod_header_xhtml_li1 =
+	"Set DOCTYPE to XHTML+RDFa 1.0:";
+$lang_mod_header_xhtml_li2 =
+	"Set html version attribute to XHTML+RDFa1.0:";
+$lang_mod_header_xhtml_li3 =
+	"Check that the &lt;head&gt; element includes the proper content type and encoding for XHTML:";
+$lang_mod_header_html5 =
+	"HTML5";
+$lang_mod_header_html5_li1 =
+	"Set DOCTYPE to html:";
+$lang_mod_header_html5_li2 =
+	"Set html version attribute to HTML+RDFa1.1";
+$lang_mod_header_html =
+	"Other HTML markup";
+$lang_mod_header_html_li1 =
+	"Either use HTML5 recipe or simply set the html version attribute to HTML+RDFa1.1 or XHTML+RDFa1.0. Most clients will extract RDF from this type. Either";
+$lang_mod_header_html_li2 =
+	"or";
 $lang_mod_header_p2 =
-	"<p>Add a \"xmlns\" attribute with the value \"http://www.w3.org/1999/xhtml\" and a \"version\" attribute with the value \"HTML+RDFa 1.0\" to the &lt;html&gt; element of your document: </p>";
-$lang_mod_header_p3 =
-	"<p>Check that the &lt;head&gt; element includes the proper content type and encoding for XHTML: </p>";
-$lang_mod_header_p4 =
 	"<p>With our dedicated notification service we can provide you assistance in publishing your embedded GoodRelations content. There you just have to fill in your page's Web address, afterwards we can automatically take care of the registration of your pages on the Web of Linked Data. This online tool is available <a href=\"http://gr-notify.appspot.com/\">here</a>.</p>";
 $lang_additional_resources =
 	"Additional resources";

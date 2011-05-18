@@ -54,6 +54,15 @@ $(document).ready(function() {
 		timeFormat: "hh:mm:ss\Z",
 		separator: "T"
 	});
+	
+	$("#slider").easySlider({
+		//auto: true,
+		//speed: 2000,
+		//continuous: true,
+		nextText: "&raquo;",
+		prevText: "&laquo;",
+		controlsShow: true
+	});
 });
 
 function reload(template_uri)

@@ -3,9 +3,9 @@ $template_name = "offer";
 include('error.template.php');
 
 /* create offering snippet */
-$product_type = "ProductOrServicesSomeInstancesPlaceholder";
+$product_type = "SomeItems";
 if(isset($isplaceholder) && !$isplaceholder)
-	$product_type = "ActualProductOrServiceInstance";
+	$product_type = "Individual";
 	
 $offering = new Resource("#offering", "gr:Offering");
 $product = new Resource("#product", "gr:".$product_type);

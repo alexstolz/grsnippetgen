@@ -19,6 +19,11 @@ h2 {
 	padding-top: 24px;
 	padding-bottom: 12px;
 }
+h3 {
+	font-size: 13px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
 .button {
 	padding: 2px;
 	border: #666 solid 1px;
@@ -104,3 +109,75 @@ a {
 .ui-timepicker-div dl dt{ height: 25px; }
 .ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
 .ui-timepicker-div td { font-size: 80%; }
+
+/* slider */
+#slider {
+	margin-top: 24px;
+	padding-top: 6px;
+    border: #ccc solid 1px;
+}
+#slider img {
+    float: left;
+}
+.slide {
+    width: 976px;
+    padding: 10px;
+}
+.slide h1 {
+    font-size: 120%;
+	float: none;
+	padding: 0;
+    border-bottom: #ccc solid 1px;
+}
+.slide h2 {
+    font-size: 100%;
+    float: right;
+	padding: 0;
+    color: #999;
+}
+.slide p {
+    text-align: justify;
+    width: 450px;
+	margin: 0 0 6px 0;
+	padding: 0;
+    float: right;
+}
+#slider ul, #slider li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#slider li { 
+    width: 996px;
+    height: 500px;
+	overflow:hidden; 
+}
+#prevBtn, #nextBtn { 
+	width:48px;
+	height:48px;
+	margin-top: -300px;
+}
+#prevBtn {
+    float:left;
+    margin-left: -33px;
+}
+#nextBtn {
+	float:right;
+	margin-right: -35px;
+}														
+#prevBtn a, #nextBtn a {  
+	display:block;
+	width:48px;
+	height:48px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	padding-top: 14px;
+	color: black;	
+}	
+#prevBtn a {
+	background: url("../images/draw-halfcircle1.png") no-repeat 0 0;
+}
+#nextBtn a { 
+	background: url("../images/draw-halfcircle2.png") no-repeat 0 0;	
+}

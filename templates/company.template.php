@@ -26,7 +26,7 @@ if($tel) {
 //	$r_tel->add_rel("rdf:type", "http://www.w3.org/2006/vcard/ns#Voice");
 }
 if($depiction)
-	$company->add_rel("foaf:depiction", $depiction);
+	$company->add_rel("foaf:logo", $depiction);
 $company->add_rel("foaf:page", "TEMPORARY_HELPER");
 
 $serializer = new Serializer();

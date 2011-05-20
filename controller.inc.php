@@ -150,10 +150,13 @@ if($template_type == '')
 		"CheckInAdvance"			=>	$lang_controller_paymethod_checkinadvance,
 		"COD"						=>	$lang_controller_paymethod_cashondelivery,
 		"DirectDebit"				=>	$lang_controller_paymethod_directdebit,
+		"GoogleCheckOut"			=>	"Google Checkout",
 		"PayPal"					=>	"PayPal",
+		"PaySwarm"					=>	"PaySwarm",
 		"AmericanExpress"			=>	"American Express",
 		"DinersClub"				=>	"DinersClub",
 		"Discover"					=>	"Discover",
+		"JCB"						=>	"JCB",
 		"MasterCard"				=>	"MasterCard",
 		"VISA"						=>	"VISA");
 	?>

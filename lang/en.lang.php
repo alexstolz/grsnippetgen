@@ -132,6 +132,10 @@ $lang_additional_goodrelations =
 	"information about the underlying GoodRelations vocabulary";
 $lang_additional_grnotify =
 	"notification service for submission of GoodRelations contents to semantic search engines";
+$lang_additional_src_title =
+    "Source Code";
+$lang_additional_src_content =
+    "The source code of this tool is available under a LPGL license from <a href=\"http://code.google.com/p/grsnippetgen/\">http://code.google.com/p/grsnippetgen/</a>";
 $lang_epilogue =
 	"<p><strong>Developer:</strong> Alex Stolz</p>
 	<p><strong>Disclaimer:</strong> This service is provided by the <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> at Universität der Bundeswehr München as it is with no explicit or implicit guarantees.</p>";

@@ -1,0 +1,11 @@
+# Turn off MultiViews
+Options -MultiViews
+
+# Rewrite engine setup
+RewriteEngine On
+
+RewriteBase /grsnippetgen/
+
+#grsnippetgen
+RewriteRule ^([a-z]{2})$ index.php?lang=$1 [NC,L]
+RewriteRule ^([a-z]{2})(#.*)?$ index.php?lang=$1$2 [NC,L]

@@ -151,10 +151,12 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 	</div>
 	<?php echo $lang_mod_header_p2 ?>
 	<h2><?php echo $lang_additional_resources ?></h2>
-	<p><a href="http://www.ebusiness-unibw.org/wiki/GoodRelationsQuickstart">GoodRelations Quickstart Guide</a> - <?php echo $lang_additional_quickstart ?></p>
-	<p><a href="http://www.ebusiness-unibw.org/wiki/GoodRelations#CookBook:_GoodRelations_Recipes_and_Examples">GoodRelations CookBook</a> - <?php echo $lang_additional_cookbook ?></p>
+	<p><a href="http://wiki.goodrelations-vocabulary.org/Quickstart">GoodRelations Quickstart Guide</a> - <?php echo $lang_additional_quickstart ?></p>
+	<p><a href="http://wiki.goodrelations-vocabulary.org/Cookbook">GoodRelations CookBook</a> - <?php echo $lang_additional_cookbook ?></p>
 	<p><a href="http://purl.org/goodrelations/">GoodRelations Project Page</a> - <?php echo $lang_additional_goodrelations ?></p>
 	<p><a href="http://gr-notify.appspot.com/">GoodRelations Notify</a> - <?php echo $lang_additional_grnotify ?></p>
+	<h2><?php $lang_additional_src_title ?></h2>
+	<p><?php $lang_additional_src_content ?></p>
 	<div><img class="nodisp" src="images/load.gif" alt="" /></div>
 	<div><img class="nodisp" src="images/valid.png" alt="" /></div>
 	<div><img class="nodisp" src="images/warning.png" alt="" /></div>

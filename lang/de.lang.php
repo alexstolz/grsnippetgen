@@ -131,10 +131,14 @@ $lang_additional_goodrelations =
 	"Informationen über das zugrundeliegende GoodRelations Vokabular";
 $lang_additional_grnotify =
 	"Übermittlungsdienst für GoodRelations-Inhalte an semantische Suchmaschinen";
-$lang_additional_src_title =
+$lang_sourcecode_title =
     "Quellcode";
-$lang_additional_src_content =
+$lang_sourcecode_content =
     "Der Quellcode dieses Tools steht unter einer LGPL-Lizenz und wurde als Projekt unter Google Code veröffentlicht: <a href=\"http://code.google.com/p/grsnippetgen/\">http://code.google.com/p/grsnippetgen/</a>.";
+$lang_acknowledgements_title =
+    "Danksagung";
+$lang_acknowledgements_content =
+    "Besonderer Dank geht an Özer Kavak für Beiträge an der Übersetzung des Tools.";
 $lang_epilogue =
 	"<p><strong>Entwickler:</strong> Alex Stolz</p>
 	<p><strong>Haftungsausschluss:</strong> Dies ist ein Service der Forschungsgruppe <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> an der Universität der Bundeswehr München und bietet weder ausdrückliche noch inbegriffene Gewährleistungen.</p>";
@@ -283,7 +287,7 @@ $lang_output_success =
 $lang_output_success_company =
 	"<p>Fein!<br/>Kopieren Sie nun das obige Codestück und fügen Sie es in Ihre <strong>Unternehmenswebseite</strong> ein, am besten direkt vor dem schließenden HTML BODY Tag. Danach fahren Sie mit Schritt 2 fort!</p>";
 $lang_output_success_shop =
-	"<p>Sehr gut!<br/>Gehen Sie wie soeben vor indem Sie das Codefragment kopieren und dann in Ihre <strong>Shopwebseite</strong> einfügen. Falls die URI der Geschäftsstelle dieselbe wie die des Unternehmens ist, dann platzieren Sie den Code zwischen die Unternehmensbeschreibung und das abschließende HTML BODY Tag. WICHTIG: Überprüfen Sie, ob gr:hasPOS richtig auf die Unternehmenswebseite verweist (z.B. http://www.example.com/#company). Falls nicht, so bessern Sie es aus. Dann können Sie mit Schritt 3 fortfahren!</p>";
+	"<p>Sehr gut!<br/>Gehen Sie wie soeben vor indem Sie das Codefragment kopieren und dann in Ihre <strong>Shopwebseite</strong> einfügen. Falls die URL der Geschäftsstelle dieselbe wie die des Unternehmens ist, dann platzieren Sie den Code zwischen die Unternehmensbeschreibung und das abschließende HTML BODY Tag. WICHTIG: Überprüfen Sie, ob gr:hasPOS richtig auf die Unternehmenswebseite verweist (z.B. http://www.example.com/#company). Falls nicht, so bessern Sie es aus. Dann können Sie mit Schritt 3 fortfahren!</p>";
 $lang_output_success_offer =
 	"<p>Ausgezeichnet!<br/>Ihre Produktbeschreibung ist valide und kann nun auf der <strong>Produkt-Detailseite</strong> veröffentlicht werden. Kopieren Sie wiederum das generierte Codestück und fügen es vor dem abschließenden HTML BODY Tag Ihrer Produktwebseite ein. Der vierte und letzte Schritt, der nun noch verbleibt, ist die Anpassung der Header ihrer Webseite.</p>";
 ?>

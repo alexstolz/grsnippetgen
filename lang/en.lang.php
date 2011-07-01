@@ -132,10 +132,14 @@ $lang_additional_goodrelations =
 	"information about the underlying GoodRelations vocabulary";
 $lang_additional_grnotify =
 	"notification service for submission of GoodRelations contents to semantic search engines";
-$lang_additional_src_title =
+$lang_sourcecode_title =
     "Source Code";
-$lang_additional_src_content =
+$lang_sourcecode_content =
     "The source code of this tool is available under a LPGL license from <a href=\"http://code.google.com/p/grsnippetgen/\">http://code.google.com/p/grsnippetgen/</a>.";
+$lang_acknowledgements_title =
+    "Acknowledgements";
+$lang_acknowledgements_content =
+    "Thanks to Özer Kavak who contributed translations to this project.";
 $lang_epilogue =
 	"<p><strong>Developer:</strong> Alex Stolz</p>
 	<p><strong>Disclaimer:</strong> This service is provided by the <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> at Universität der Bundeswehr München as it is with no explicit or implicit guarantees.</p>";
@@ -284,7 +288,7 @@ $lang_output_success =
 $lang_output_success_company =
 	"<p>Well done!<br/>Now copy the above code snippet and paste it into your <strong>company's web page</strong>, best to be placed right before the closing HTML BODY tag. Then continue with Step 2!</p>";
 $lang_output_success_shop =
-	"<p>Great!<br/>Proceed like before by copying the above code snippet and pasting it into your <strong>store's web page</strong>. If the store's web page URI is the same as the company's one, then place the snippet within company description and HTML BODY end tag. IMPORTANT: assess whether gr:hasPOS correctly links to your company's web page (e.g. http://www.example.com/#company). If it doesn't, fix it. Then continue with Step 3!</p>";
+	"<p>Great!<br/>Proceed like before by copying the above code snippet and pasting it into your <strong>store's web page</strong>. If the store's URL is equal to the company's one, then place the snippet within company description and HTML BODY end tag. IMPORTANT: assess whether gr:hasPOS correctly links to your company's web page (e.g. http://www.example.com/#company). If it doesn't, fix it. Then continue with Step 3!</p>";
 $lang_output_success_offer =
 	"<p>Awesome!<br/>Your offer description passed the validation and is just ready to be published on the <strong>product's web page</strong>. Copy the rich snippet and place it right before the closing HTML BODY tag of your product's web page. The very last thing that remains to be done is the 4th and final step, that is to update the page header of your web site.</p>";
 ?>

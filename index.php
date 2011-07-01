@@ -42,7 +42,11 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 	?>
 	<div id="prologue">
 		<?php echo $lang_prologue ?>
-		<div style="float:right;font-size:12px"><a href="en" style="text-decoration:<?php echo $lang=="en"?"none":"underline" ?>">en</a>&nbsp;<a href="de" style="text-decoration:<?php echo $lang=="de"?"none":"underline" ?>">de</a></div>
+		<div style="float:right;font-size:12px">
+		    <a href="en" style="text-decoration:<?php echo $lang=="en"?"none":"underline" ?>">en</a>&nbsp;
+		    <a href="de" style="text-decoration:<?php echo $lang=="de"?"none":"underline" ?>">de</a>&nbsp;
+		    <a href="tr" style="text-decoration:<?php echo $lang=="tr"?"none":"underline" ?>">tr</a>
+		</div>
 	</div>
 	<?php
 	/*
@@ -108,7 +112,7 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 	?></div>
 	<p>b) <?php echo $lang_mod_header_xhtml_li2 ?></p>
 	<div class="pre_static"><?php
-				$geshi->set_source('<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0" xml:lang="en">');
+				$geshi->set_source('<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0" xml:lang="'.$lang.'">');
 				echo $geshi->parse_code();
 				?>
 	</div>
@@ -131,7 +135,7 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 	</div>
 	<p>b) <?php echo $lang_mod_header_html5_li2 ?></p>
 	<div class="pre_static"><?php
-				$geshi->set_source('<html version="HTML+RDFa 1.1" lang="en">');
+				$geshi->set_source('<html version="HTML+RDFa 1.1" lang="'.$lang.'">');
 				echo $geshi->parse_code();
 				?>
 	</div>
@@ -155,8 +159,10 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 	<p><a href="http://wiki.goodrelations-vocabulary.org/Cookbook">GoodRelations CookBook</a> - <?php echo $lang_additional_cookbook ?></p>
 	<p><a href="http://purl.org/goodrelations/">GoodRelations Project Page</a> - <?php echo $lang_additional_goodrelations ?></p>
 	<p><a href="http://gr-notify.appspot.com/">GoodRelations Notify</a> - <?php echo $lang_additional_grnotify ?></p>
-	<h2><?php echo $lang_additional_src_title ?></h2>
-	<p><?php echo $lang_additional_src_content ?></p>
+	<h2><?php echo $lang_sourcecode_title ?></h2>
+	<p><?php echo $lang_sourcecode_content ?></p>
+	<h2><?php echo $lang_acknowledgements_title ?></h2>
+	<p><?php echo $lang_acknowledgements_content ?></p>
 	<div><img class="nodisp" src="images/load.gif" alt="" /></div>
 	<div><img class="nodisp" src="images/valid.png" alt="" /></div>
 	<div><img class="nodisp" src="images/warning.png" alt="" /></div>

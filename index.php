@@ -161,8 +161,10 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 	<p><a href="http://gr-notify.appspot.com/">GoodRelations Notify</a> - <?php echo $lang_additional_grnotify ?></p>
 	<h2><?php echo $lang_sourcecode_title ?></h2>
 	<p><?php echo $lang_sourcecode_content ?></p>
+	<?php /* ?>
 	<h2><?php echo $lang_acknowledgements_title ?></h2>
 	<p><?php echo $lang_acknowledgements_content ?></p>
+	<?php */ ?>
 	<div><img class="nodisp" src="images/load.gif" alt="" /></div>
 	<div><img class="nodisp" src="images/valid.png" alt="" /></div>
 	<div><img class="nodisp" src="images/warning.png" alt="" /></div>

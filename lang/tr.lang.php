@@ -137,7 +137,7 @@ $lang_sourcecode_title =
 $lang_sourcecode_content =
     "Bu uygılamanın kaynak kodu LPGL lisansı ile dağıtılmaktadır <a href=\"http://code.google.com/p/grsnippetgen/\">http://code.google.com/p/grsnippetgen/</a>.";
 $lang_acknowledgements_title =
-    "Şükran";
+    "";
 $lang_acknowledgements_content =
     "Thanks to Özer Kavak who contributed translations to this project.";
 $lang_epilogue =

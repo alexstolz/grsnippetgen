@@ -75,7 +75,7 @@ $lang_conf_lang =
 $lang_conf_product_page =
         "Ürün sayfasının ağ adresi (Örnek: http://www.example.com/product/)";
 $lang_conf_product_depiction =
-        "Ürüne ait resmin ağ adre4si (Örnek: http://www.example.com/image.(jpg|png|gif|svg))";
+        "Ürüne ait resmin ağ adresi (Örnek: http://www.example.com/image.(jpg|png|gif|svg))";
 $lang_conf_gtin_13 =
         "Ürünün, EAN-13, 13 basamaklı UPC, veya 13 basamaklı ISBN kodu";
 $lang_conf_currency =
@@ -137,9 +137,9 @@ $lang_sourcecode_title =
 $lang_sourcecode_content =
     "Bu uygılamanın kaynak kodu LPGL lisansı ile dağıtılmaktadır <a href=\"http://code.google.com/p/grsnippetgen/\">http://code.google.com/p/grsnippetgen/</a>.";
 $lang_acknowledgements_title =
-    "";
+    "Teşekkür";
 $lang_acknowledgements_content =
-    "Thanks to Özer Kavak who contributed translations to this project.";
+    "Bu projenin çevirisinde katkıda bulunanlara teşekkür ederiz. Özer Kavak.";
 $lang_epilogue =
         "<p><strong>Geliştirici:</strong> Alex Stolz</p>
         <p><strong>Yasal Uyarı:</strong> Bu hizmet Alman Münih Üniversitesi, <a href=\"http://www.unibw.de/ebusiness/\">E-ticaret ve Web Bilim Araştırma Grubu</a> tarafından, hiçbir garanti verilmeden sunulmaktadır. İlgili kurum ve kişiler hiçbir sorumluluk kabul etmez.</p>";
@@ -158,7 +158,7 @@ $lang_controller_p1_shop =
 $lang_controller_p1_shop_button =
         "İşletmenin adres bilgilerini satış noktasına kopyala";
 $lang_controller_p1_offer =
-        "Tek tek ürün ve hizmetleri tanımlayıp yayınlamanız durumda, GoodRelations çok etkilidir. Aytıca, bir çok ürünü barındıran dinamik yapıdaki sanal mağazalar için çok uygundur.";
+        "Tek tek ürün ve hizmetleri tanımlayıp yayınlamanız durumda, GoodRelations çok etkilidir. Ayrıca, bir çok ürünü barındıran dinamik yapıdaki sanal mağazalar için çok uygundur.";
 $lang_controller_geo_desc =
         "Coğrafi Konumu";
 $lang_controller_geo_button =
@@ -235,7 +235,7 @@ $lang_controller_submit_button =
 $lang_controller_allow_logging =
         "Girilen bilgilerin araştırma amaçlı olarak kullanılmak üzere kaydedilmesine izin veriyor musunuz?";
 $lang_controller_shop_additional_information =
-        "<p>Eğere mapazanızın açık olduğu saatlerle ilgili daha ayrıntılı açıklama yapmak istiyorsanız, gr:OpeningHoursSpecification bölümünü ihtiyaçlarınız doğrultusunda özelleştirebilirsiniz. Ayrıntılı bilgi için <a href=\"http://www.ebusiness-unibw.org/wiki/GoodRelationsQuickstart\">GoodRelations Hızlı Başlangıç ​​Kılavuzu (İngilizce)</a>.</p>
+        "<p>Eğer mağazanızın açık olduğu saatlerle ilgili daha ayrıntılı açıklama yapmak istiyorsanız, gr:OpeningHoursSpecification bölümünü ihtiyaçlarınız doğrultusunda özelleştirebilirsiniz. Ayrıntılı bilgi için <a href=\"http://www.ebusiness-unibw.org/wiki/GoodRelationsQuickstart\">GoodRelations Hızlı Başlangıç Kılavuzu (İngilizce)</a>.</p>
         <p>Tek bir sayfada birden fazla mağaza ile ilgili bilgi veriyorsanız, ilgili kodlamanın bir kopyasını alıp, mağaza sayısı kadar çoğaltın (yapıştırın). Her mağaza için tanımlı öğelerdeki durumları değiştirin. Örneğin, tek mağaza için üretilen kod içinde <em>(#store, #mon_fri, ve #sat)</em> olan değerleri, kopyaladığınız her mağaza için <em>(#store1, #mon_fri1, #sat1)</em>, <em>(#store2, #mon_fri2, #sat2)</em> olacak şekilde değiştirin.</p>";
 $lang_controller_offer_additional_information =
         "<p>Tek bir sayfada birden fazla ürün ile ilgili bilgi veriyorsanız, ilgili kodlamanın bir kopyasını alıp, aynı sayfada bulunan ürün sayısı kadar çoğaltın (yapıştırın). Her bir ürün için tanımlı öğelerin adını değiştirin. Örneğin, tek ürün için <em>#offer</em> olan değerleri, kopyaladığınız her ürün için <em>#offer1</em>, <em>#offer2</em> olacak şekilde değiştirin.</p>";

@@ -133,16 +133,16 @@ $lang_additional_goodrelations =
 $lang_additional_grnotify =
 	"υπηρεσία ειδοποίησης για την καταχώρηση περιεχομένου GoodRelations σε σημασιολογικές μηχανές αναζήτησης";
 $lang_sourcecode_title =
-    "Source Code";
+    "πηγαίου κώδικα";
 $lang_sourcecode_content =
     "Ο πηγαίος κώδικας αυτου του εργαλείου είναι διαθέσιμος κατώ από την άδεια LPGL από <a href=\"http://code.google.com/p/grsnippetgen/\">http://code.google.com/p/grsnippetgen/</a>.";
 $lang_acknowledgements_title =
-    "Acknowledgements";
+    "Ευχαριστίες";
 $lang_acknowledgements_content =
     "Ευχαριστούμε τους Özer Kavak και Γιώργο Αλεξίου οι οποίοι βοήθησαν στις μεταφράσεις αυτού του project.";
 $lang_epilogue =
-	"<p><strong>Developer:</strong> Alex Stolz</p>
-	<p><strong>Disclaimer:</strong> Αυτή η υπηρεσία προσφέρεται από το <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> στο Universitat der Bundeswehr Munchen ως έχει χωρίς καμία ρητή ή ασαφής εγγυήση.</p>";	
+	"<p><strong>Προγραμματιστής:</strong> Alex Stolz</p>
+	<p><strong>Αποποίηση:</strong> Αυτή η υπηρεσία προσφέρεται από το <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> στο Universitat der Bundeswehr Munchen ως έχει χωρίς καμία ρητή ή ασαφής εγγυήση.</p>";	
 	
 /* controller.inc */
 $lang_controller_title =

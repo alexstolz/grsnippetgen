@@ -46,6 +46,7 @@ else if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && file_exists("lang/$accepted_l
 		    <a href="en" style="text-decoration:<?php echo $lang=="en"?"none":"underline" ?>">en</a>&nbsp;
 		    <a href="de" style="text-decoration:<?php echo $lang=="de"?"none":"underline" ?>">de</a>&nbsp;
 		    <a href="tr" style="text-decoration:<?php echo $lang=="tr"?"none":"underline" ?>">tr</a>
+			<a href="el" style="text-decoration:<?php echo $lang=="el"?"none":"underline" ?>">el</a>
 		</div>
 	</div>
 	<?php

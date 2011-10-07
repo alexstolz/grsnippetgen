@@ -139,7 +139,7 @@ $lang_sourcecode_content =
 $lang_acknowledgements_title =
     "Acknowledgements";
 $lang_acknowledgements_content =
-    "Thanks to Özer Kavak who contributed translations to this project.";
+    "Thanks to Özer Kavak and Giorgos Alexiou who contributed translations to this project.";
 $lang_epilogue =
 	"<p><strong>Developer:</strong> Alex Stolz</p>
 	<p><strong>Disclaimer:</strong> This service is provided by the <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> at Universität der Bundeswehr München as it is with no explicit or implicit guarantees.</p>";

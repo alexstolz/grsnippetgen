@@ -69,7 +69,7 @@ if($closes_su)
 	$opening_hours_su->add_property("gr:closes", $closes_su.":00", "xsd:time");
 if($opens_su || $closes_su)
 	$shop->add_rel("gr:hasOpeningHoursSpecification", $opening_hours_su);
-$shop->add_rel("foaf:page", "TEMPORARY_HELPER");
+// $shop->add_rel("foaf:page", "TEMPORARY_HELPER");
 
 $serializer = new Serializer();
 $serializer->add_ns("vcard", "http://www.w3.org/2006/vcard/ns#");

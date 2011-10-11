@@ -10,6 +10,23 @@ function fill_vcard() {
 	}
 }
 
+function select_output(element) {
+    serializations = document.getElementsByName("serialization_format");
+    for (var i=0; i<serializations.length; i++) {
+        if (serializations[i].id == element.id)
+            continue;
+        if (serializations[i].value == element.value) {
+            serializations[i].checked = element.checked;
+            serializations[i].value = element.checked;
+        }
+        else {
+            serializations[i].checked = !element.checked;
+            serializations[i].value = !element.checked;
+        }
+    }
+    element.value = element.checked;
+}
+
 function swap_logging(id) {
 	clog = document.getElementById('company_logging_allowed');
 	slog = document.getElementById('shop_logging_allowed');

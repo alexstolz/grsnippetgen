@@ -89,5 +89,9 @@ foreach($arr as $key=>$value) {
 	${$key} = htmlspecialchars(str_replace(array("\\\"", "\\'"), array("\"", "'"), $value), ENT_QUOTES, "UTF-8");
 	$dl_button_link .= urlencode($key)."=".urlencode($value)."&amp;";
 }
-require_once("../utils/rdfaizer.php");
+
+if($arr[$template_name."_rdfa"] == "true")
+    require_once("../utils/rdfaizer.php");
+elseif($arr[$template_name."_microdata"] == "true")
+    require_once("../utils/microdizer.php");
 ?>

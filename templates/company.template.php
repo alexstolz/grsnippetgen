@@ -27,7 +27,7 @@ if($tel) {
 }
 if($depiction)
 	$company->add_rel("foaf:logo", $depiction);
-$company->add_rel("foaf:page", "TEMPORARY_HELPER");
+$company->add_rel("foaf:page", substr($page, 0, strlen($page)-8));//"TEMPORARY_HELPER");
 
 $serializer = new Serializer();
 $serializer->add_ns("vcard", "http://www.w3.org/2006/vcard/ns#");

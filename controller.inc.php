@@ -232,6 +232,10 @@ if($template_type == '')
 	?>
 	<p><input type="checkbox" id="<?php echo $template_type ?>_logging_allowed" checked="checked" value="true" onclick="javascript:swap_logging(this.id)" /><span style="font-size:11px;color:#666;"><?php echo $lang_controller_allow_logging ?></span>
 	</p>
+	<p>
+	    <input type="radio" id="<?php echo $template_type ?>_microdata" name="serialization_format" value="true" checked="checked" onclick="javascript:select_output(this)" />Microdata
+	    <input type="radio" id="<?php echo $template_type ?>_rdfa" name="serialization_format" value="false" onclick="javascript:select_output(this)" />RDFa
+	</p>
 	<p><input id="<?php echo $template_type ?>_langcode" type="hidden" value="<?php echo $lang ?>" /><input id="<?php echo $template_type ?>_button" type="button" value="<?php echo $lang_controller_submit_button ?>" onclick="<?php
 	if ($template_type == "shop")
 		echo "document.getElementById('shop_page').value=document.getElementById('company_page').value";

@@ -138,7 +138,7 @@ $lang_sourcecode_content =
 $lang_acknowledgements_title =
     "Danksagung";
 $lang_acknowledgements_content =
-    "Besonderer Dank geht an Özer Kavak und Giorgos Alexiou für wertvolle Beiträge an der Übersetzung des Tools.";
+    "Besonderer Dank geht an Özer Kavak und Giorgos Alexiou für wertvolle Beiträge an der Übersetzung des Tools. Die Arbeit an GRSnippetGen wurde vom <a href=\"http://www.bmbf.de/en/\">Deutschen Bundesministerium für Bildung und Forschung (BMBF)</a> im Rahmen des Forschungsförderungsprogramms KMU Innovativ als Teil des <a href=\"http://www.intelligent-match.de/\">IntelligentMatch-Projekts</a> (FKZ 01IS10022B) unterstützt.";
 $lang_epilogue =
 	"<p><strong>Entwickler:</strong> Alex Stolz</p>
 	<p><strong>Haftungsausschluss:</strong> Dies ist ein Service der Forschungsgruppe <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> an der Universität der Bundeswehr München und bietet weder ausdrückliche noch inbegriffene Gewährleistungen.</p>";

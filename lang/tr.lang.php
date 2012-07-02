@@ -139,7 +139,7 @@ $lang_sourcecode_content =
 $lang_acknowledgements_title =
     "Teşekkür";
 $lang_acknowledgements_content =
-    "Bu projenin çevirisinde katkıda bulunanlara teşekkür ederiz. Özer Kavak, Giorgos Alexiou.";
+    "Bu projenin çevirisinde katkıda bulunanlara teşekkür ederiz. Özer Kavak, Giorgos Alexiou. GRSnippetGen üzerinde çalışma programı tarafından hibe kapsamında Araştırma Alman Federal Bakanlığı (BMBF) tarafından desteklenen Has Been projenin parçası KMU Innovativ Akıllı Maç (FKZ 01IS10022B) gibi.";
 $lang_epilogue =
         "<p><strong>Geliştirici:</strong> Alex Stolz</p>
         <p><strong>Yasal Uyarı:</strong> Bu hizmet Alman Münih Üniversitesi, <a href=\"http://www.unibw.de/ebusiness/\">E-ticaret ve Web Bilim Araştırma Grubu</a> tarafından, hiçbir garanti verilmeden sunulmaktadır. İlgili kurum ve kişiler hiçbir sorumluluk kabul etmez.</p>";

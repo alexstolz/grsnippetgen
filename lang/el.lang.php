@@ -139,7 +139,7 @@ $lang_sourcecode_content =
 $lang_acknowledgements_title =
     "Ευχαριστίες";
 $lang_acknowledgements_content =
-    "Ευχαριστούμε τους Özer Kavak και Γιώργο Αλεξίου οι οποίοι βοήθησαν στις μεταφράσεις αυτού του project.";
+    "Ευχαριστούμε τους Özer Kavak και Γιώργο Αλεξίου οι οποίοι βοήθησαν στις μεταφράσεις αυτού του project. Οι εργασίες για GRSnippetGen έχει υποστηριχθεί από το γερμανικό Ομοσπονδιακό Υπουργείο Έρευνας (BMBF) στο πλαίσιο της επιχορήγησης από το πρόγραμμα ως μέρος KMU Καινοτόμο Ευφυής αγώνα του έργου (FKZ 01IS10022B).";
 $lang_epilogue =
 	"<p><strong>Προγραμματιστής:</strong> Alex Stolz</p>
 	<p><strong>Αποποίηση:</strong> Αυτή η υπηρεσία προσφέρεται από το <a href=\"http://www.unibw.de/ebusiness/\">E-Business and Web Science Research Group</a> στο Universitat der Bundeswehr Munchen ως έχει χωρίς καμία ρητή ή ασαφής εγγυήση.</p>";	

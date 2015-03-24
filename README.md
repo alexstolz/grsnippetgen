@@ -1,3 +1,5 @@
+## Create GoodRelations Rich Snippets Embedded in XHTML for Your Business ##
+
 With this tool, you can create rich data snippets using the W3C RDFa format for simple copy-and-paste. Just insert them into your Web pages and update the XHTML/HTML page header markup.
 This makes the unique features of your products and services more accessible for the latest generation of search engines (e.g. Yahoo !SearchMonkey), novel mobile applications, and browser plug-ins. Plus, it brings positive effects on existing search engines (e.g. [Google](http://www.heppresearch.com/gr4google)).
 
